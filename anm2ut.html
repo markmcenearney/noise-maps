@@ -1,0 +1,4291 @@
+<html><head>
+<title>SAS-generated Google map with multiple markers</title>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script type="text/javascript">
+function initialize() {
+var cpoint = new google.maps.LatLng(38.92957 ,-77.11628 );
+var mapOptions = {
+zoom: 12,
+center: cpoint,
+mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+var infowindow = new google.maps.InfoWindow();
+var info1 = '<div style="width:150px;">grid: -8,8 <br>lat: 38.987591978 <br>lon: -77.18956244 <br>pca: 8418 <br>lmax: 58.7 </div>';
+var point1 = new google.maps.LatLng(38.987591978 ,-77.18956244 );
+var marker1 = new google.maps.Marker({
+position: point1 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker1 , "click", function() {
+infowindow.setContent(info1 );
+infowindow.open(map,marker1 );
+});
+var info2 = '<div style="width:150px;">grid: -8,7 <br>lat: 38.980339231 <br>lon: -77.18956244 <br>pca: 8489 <br>lmax: 58.6 </div>';
+var point2 = new google.maps.LatLng(38.980339231 ,-77.18956244 );
+var marker2 = new google.maps.Marker({
+position: point2 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker2 , "click", function() {
+infowindow.setContent(info2 );
+infowindow.open(map,marker2 );
+});
+var info3 = '<div style="width:150px;">grid: -8,6 <br>lat: 38.973086484 <br>lon: -77.18956244 <br>pca: 9054 <br>lmax: 57.2 </div>';
+var point3 = new google.maps.LatLng(38.973086484 ,-77.18956244 );
+var marker3 = new google.maps.Marker({
+position: point3 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker3 , "click", function() {
+infowindow.setContent(info3 );
+infowindow.open(map,marker3 );
+});
+var info4 = '<div style="width:150px;">grid: -8,5 <br>lat: 38.965833736 <br>lon: -77.18956244 <br>pca: 9856 <br>lmax: 55.4 </div>';
+var point4 = new google.maps.LatLng(38.965833736 ,-77.18956244 );
+var marker4 = new google.maps.Marker({
+position: point4 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker4 , "click", function() {
+infowindow.setContent(info4 );
+infowindow.open(map,marker4 );
+});
+var info5 = '<div style="width:150px;">grid: -8,4 <br>lat: 38.958580989 <br>lon: -77.18956244 <br>pca: 11094 <br>lmax: 52.4 </div>';
+var point5 = new google.maps.LatLng(38.958580989 ,-77.18956244 );
+var marker5 = new google.maps.Marker({
+position: point5 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker5 , "click", function() {
+infowindow.setContent(info5 );
+infowindow.open(map,marker5 );
+});
+var info6 = '<div style="width:150px;">grid: -8,3 <br>lat: 38.951328242 <br>lon: -77.18956244 <br>pca: 12354 <br>lmax: 49 </div>';
+var point6 = new google.maps.LatLng(38.951328242 ,-77.18956244 );
+var marker6 = new google.maps.Marker({
+position: point6 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker6 , "click", function() {
+infowindow.setContent(info6 );
+infowindow.open(map,marker6 );
+});
+var info7 = '<div style="width:150px;">grid: -8,2 <br>lat: 38.944075495 <br>lon: -77.18956244 <br>pca: 13678 <br>lmax: 45.7 </div>';
+var point7 = new google.maps.LatLng(38.944075495 ,-77.18956244 );
+var marker7 = new google.maps.Marker({
+position: point7 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker7 , "click", function() {
+infowindow.setContent(info7 );
+infowindow.open(map,marker7 );
+});
+var info8 = '<div style="width:150px;">grid: -8,1 <br>lat: 38.936822747 <br>lon: -77.18956244 <br>pca: 15224 <br>lmax: . </div>';
+var point8 = new google.maps.LatLng(38.936822747 ,-77.18956244 );
+var marker8 = new google.maps.Marker({
+position: point8 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker8 , "click", function() {
+infowindow.setContent(info8 );
+infowindow.open(map,marker8 );
+});
+var info9 = '<div style="width:150px;">grid: -8,0 <br>lat: 38.92957 <br>lon: -77.18956244 <br>pca: 16898 <br>lmax: . </div>';
+var point9 = new google.maps.LatLng(38.92957 ,-77.18956244 );
+var marker9 = new google.maps.Marker({
+position: point9 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker9 , "click", function() {
+infowindow.setContent(info9 );
+infowindow.open(map,marker9 );
+});
+var info10 = '<div style="width:150px;">grid: -8,-1 <br>lat: 38.922317253 <br>lon: -77.18956244 <br>pca: 18537 <br>lmax: . </div>';
+var point10 = new google.maps.LatLng(38.922317253 ,-77.18956244 );
+var marker10 = new google.maps.Marker({
+position: point10 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker10 , "click", function() {
+infowindow.setContent(info10 );
+infowindow.open(map,marker10 );
+});
+var info11 = '<div style="width:150px;">grid: -8,-2 <br>lat: 38.915064505 <br>lon: -77.18956244 <br>pca: 20117 <br>lmax: . </div>';
+var point11 = new google.maps.LatLng(38.915064505 ,-77.18956244 );
+var marker11 = new google.maps.Marker({
+position: point11 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker11 , "click", function() {
+infowindow.setContent(info11 );
+infowindow.open(map,marker11 );
+});
+var info12 = '<div style="width:150px;">grid: -8,-3 <br>lat: 38.907811758 <br>lon: -77.18956244 <br>pca: 21799 <br>lmax: . </div>';
+var point12 = new google.maps.LatLng(38.907811758 ,-77.18956244 );
+var marker12 = new google.maps.Marker({
+position: point12 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker12 , "click", function() {
+infowindow.setContent(info12 );
+infowindow.open(map,marker12 );
+});
+var info13 = '<div style="width:150px;">grid: -8,-4 <br>lat: 38.900559011 <br>lon: -77.18956244 <br>pca: 23562 <br>lmax: . </div>';
+var point13 = new google.maps.LatLng(38.900559011 ,-77.18956244 );
+var marker13 = new google.maps.Marker({
+position: point13 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker13 , "click", function() {
+infowindow.setContent(info13 );
+infowindow.open(map,marker13 );
+});
+var info14 = '<div style="width:150px;">grid: -8,-5 <br>lat: 38.893306264 <br>lon: -77.18956244 <br>pca: 25270 <br>lmax: . </div>';
+var point14 = new google.maps.LatLng(38.893306264 ,-77.18956244 );
+var marker14 = new google.maps.Marker({
+position: point14 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker14 , "click", function() {
+infowindow.setContent(info14 );
+infowindow.open(map,marker14 );
+});
+var info15 = '<div style="width:150px;">grid: -8,-6 <br>lat: 38.886053516 <br>lon: -77.18956244 <br>pca: 27030 <br>lmax: . </div>';
+var point15 = new google.maps.LatLng(38.886053516 ,-77.18956244 );
+var marker15 = new google.maps.Marker({
+position: point15 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker15 , "click", function() {
+infowindow.setContent(info15 );
+infowindow.open(map,marker15 );
+});
+var info16 = '<div style="width:150px;">grid: -8,-7 <br>lat: 38.878800769 <br>lon: -77.18956244 <br>pca: 28715 <br>lmax: . </div>';
+var point16 = new google.maps.LatLng(38.878800769 ,-77.18956244 );
+var marker16 = new google.maps.Marker({
+position: point16 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker16 , "click", function() {
+infowindow.setContent(info16 );
+infowindow.open(map,marker16 );
+});
+var info17 = '<div style="width:150px;">grid: -8,-8 <br>lat: 38.871548022 <br>lon: -77.18956244 <br>pca: 30355 <br>lmax: . </div>';
+var point17 = new google.maps.LatLng(38.871548022 ,-77.18956244 );
+var marker17 = new google.maps.Marker({
+position: point17 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker17 , "click", function() {
+infowindow.setContent(info17 );
+infowindow.open(map,marker17 );
+});
+var info18 = '<div style="width:150px;">grid: -7,8 <br>lat: 38.987591978 <br>lon: -77.18040214 <br>pca: 7994 <br>lmax: 59.8 </div>';
+var point18 = new google.maps.LatLng(38.987591978 ,-77.18040214 );
+var marker18 = new google.maps.Marker({
+position: point18 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker18 , "click", function() {
+infowindow.setContent(info18 );
+infowindow.open(map,marker18 );
+});
+var info19 = '<div style="width:150px;">grid: -7,7 <br>lat: 38.980339231 <br>lon: -77.18040214 <br>pca: 7851 <br>lmax: 60.4 </div>';
+var point19 = new google.maps.LatLng(38.980339231 ,-77.18040214 );
+var marker19 = new google.maps.Marker({
+position: point19 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker19 , "click", function() {
+infowindow.setContent(info19 );
+infowindow.open(map,marker19 );
+});
+var info20 = '<div style="width:150px;">grid: -7,6 <br>lat: 38.973086484 <br>lon: -77.18040214 <br>pca: 7976 <br>lmax: 60 </div>';
+var point20 = new google.maps.LatLng(38.973086484 ,-77.18040214 );
+var marker20 = new google.maps.Marker({
+position: point20 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker20 , "click", function() {
+infowindow.setContent(info20 );
+infowindow.open(map,marker20 );
+});
+var info21 = '<div style="width:150px;">grid: -7,5 <br>lat: 38.965833736 <br>lon: -77.18040214 <br>pca: 8674 <br>lmax: 58.1 </div>';
+var point21 = new google.maps.LatLng(38.965833736 ,-77.18040214 );
+var marker21 = new google.maps.Marker({
+position: point21 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker21 , "click", function() {
+infowindow.setContent(info21 );
+infowindow.open(map,marker21 );
+});
+var info22 = '<div style="width:150px;">grid: -7,4 <br>lat: 38.958580989 <br>lon: -77.18040214 <br>pca: 9584 <br>lmax: 55.6 </div>';
+var point22 = new google.maps.LatLng(38.958580989 ,-77.18040214 );
+var marker22 = new google.maps.Marker({
+position: point22 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker22 , "click", function() {
+infowindow.setContent(info22 );
+infowindow.open(map,marker22 );
+});
+var info23 = '<div style="width:150px;">grid: -7,3 <br>lat: 38.951328242 <br>lon: -77.18040214 <br>pca: 10647 <br>lmax: 53.1 </div>';
+var point23 = new google.maps.LatLng(38.951328242 ,-77.18040214 );
+var marker23 = new google.maps.Marker({
+position: point23 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker23 , "click", function() {
+infowindow.setContent(info23 );
+infowindow.open(map,marker23 );
+});
+var info24 = '<div style="width:150px;">grid: -7,2 <br>lat: 38.944075495 <br>lon: -77.18040214 <br>pca: 12004 <br>lmax: 49.9 </div>';
+var point24 = new google.maps.LatLng(38.944075495 ,-77.18040214 );
+var marker24 = new google.maps.Marker({
+position: point24 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker24 , "click", function() {
+infowindow.setContent(info24 );
+infowindow.open(map,marker24 );
+});
+var info25 = '<div style="width:150px;">grid: -7,1 <br>lat: 38.936822747 <br>lon: -77.18040214 <br>pca: 13549 <br>lmax: 45.9 </div>';
+var point25 = new google.maps.LatLng(38.936822747 ,-77.18040214 );
+var marker25 = new google.maps.Marker({
+position: point25 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker25 , "click", function() {
+infowindow.setContent(info25 );
+infowindow.open(map,marker25 );
+});
+var info26 = '<div style="width:150px;">grid: -7,0 <br>lat: 38.92957 <br>lon: -77.18040214 <br>pca: 15100 <br>lmax: . </div>';
+var point26 = new google.maps.LatLng(38.92957 ,-77.18040214 );
+var marker26 = new google.maps.Marker({
+position: point26 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker26 , "click", function() {
+infowindow.setContent(info26 );
+infowindow.open(map,marker26 );
+});
+var info27 = '<div style="width:150px;">grid: -7,-1 <br>lat: 38.922317253 <br>lon: -77.18040214 <br>pca: 16622 <br>lmax: . </div>';
+var point27 = new google.maps.LatLng(38.922317253 ,-77.18040214 );
+var marker27 = new google.maps.Marker({
+position: point27 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker27 , "click", function() {
+infowindow.setContent(info27 );
+infowindow.open(map,marker27 );
+});
+var info28 = '<div style="width:150px;">grid: -7,-2 <br>lat: 38.915064505 <br>lon: -77.18040214 <br>pca: 18244 <br>lmax: . </div>';
+var point28 = new google.maps.LatLng(38.915064505 ,-77.18040214 );
+var marker28 = new google.maps.Marker({
+position: point28 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker28 , "click", function() {
+infowindow.setContent(info28 );
+infowindow.open(map,marker28 );
+});
+var info29 = '<div style="width:150px;">grid: -7,-3 <br>lat: 38.907811758 <br>lon: -77.18040214 <br>pca: 19989 <br>lmax: . </div>';
+var point29 = new google.maps.LatLng(38.907811758 ,-77.18040214 );
+var marker29 = new google.maps.Marker({
+position: point29 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker29 , "click", function() {
+infowindow.setContent(info29 );
+infowindow.open(map,marker29 );
+});
+var info30 = '<div style="width:150px;">grid: -7,-4 <br>lat: 38.900559011 <br>lon: -77.18040214 <br>pca: 21656 <br>lmax: . </div>';
+var point30 = new google.maps.LatLng(38.900559011 ,-77.18040214 );
+var marker30 = new google.maps.Marker({
+position: point30 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker30 , "click", function() {
+infowindow.setContent(info30 );
+infowindow.open(map,marker30 );
+});
+var info31 = '<div style="width:150px;">grid: -7,-5 <br>lat: 38.893306264 <br>lon: -77.18040214 <br>pca: 23400 <br>lmax: . </div>';
+var point31 = new google.maps.LatLng(38.893306264 ,-77.18040214 );
+var marker31 = new google.maps.Marker({
+position: point31 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker31 , "click", function() {
+infowindow.setContent(info31 );
+infowindow.open(map,marker31 );
+});
+var info32 = '<div style="width:150px;">grid: -7,-6 <br>lat: 38.886053516 <br>lon: -77.18040214 <br>pca: 25108 <br>lmax: . </div>';
+var point32 = new google.maps.LatLng(38.886053516 ,-77.18040214 );
+var marker32 = new google.maps.Marker({
+position: point32 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker32 , "click", function() {
+infowindow.setContent(info32 );
+infowindow.open(map,marker32 );
+});
+var info33 = '<div style="width:150px;">grid: -7,-7 <br>lat: 38.878800769 <br>lon: -77.18040214 <br>pca: 26708 <br>lmax: . </div>';
+var point33 = new google.maps.LatLng(38.878800769 ,-77.18040214 );
+var marker33 = new google.maps.Marker({
+position: point33 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker33 , "click", function() {
+infowindow.setContent(info33 );
+infowindow.open(map,marker33 );
+});
+var info34 = '<div style="width:150px;">grid: -7,-8 <br>lat: 38.871548022 <br>lon: -77.18040214 <br>pca: 28446 <br>lmax: . </div>';
+var point34 = new google.maps.LatLng(38.871548022 ,-77.18040214 );
+var marker34 = new google.maps.Marker({
+position: point34 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker34 , "click", function() {
+infowindow.setContent(info34 );
+infowindow.open(map,marker34 );
+});
+var info35 = '<div style="width:150px;">grid: -6,8 <br>lat: 38.987591978 <br>lon: -77.17124183 <br>pca: 8295 <br>lmax: 59.1 </div>';
+var point35 = new google.maps.LatLng(38.987591978 ,-77.17124183 );
+var marker35 = new google.maps.Marker({
+position: point35 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker35 , "click", function() {
+infowindow.setContent(info35 );
+infowindow.open(map,marker35 );
+});
+var info36 = '<div style="width:150px;">grid: -6,7 <br>lat: 38.980339231 <br>lon: -77.17124183 <br>pca: 7591 <br>lmax: 60.8 </div>';
+var point36 = new google.maps.LatLng(38.980339231 ,-77.17124183 );
+var marker36 = new google.maps.Marker({
+position: point36 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker36 , "click", function() {
+infowindow.setContent(info36 );
+infowindow.open(map,marker36 );
+});
+var info37 = '<div style="width:150px;">grid: -6,6 <br>lat: 38.973086484 <br>lon: -77.17124183 <br>pca: 7411 <br>lmax: 61.4 </div>';
+var point37 = new google.maps.LatLng(38.973086484 ,-77.17124183 );
+var marker37 = new google.maps.Marker({
+position: point37 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker37 , "click", function() {
+infowindow.setContent(info37 );
+infowindow.open(map,marker37 );
+});
+var info38 = '<div style="width:150px;">grid: -6,5 <br>lat: 38.965833736 <br>lon: -77.17124183 <br>pca: 7657 <br>lmax: 60.8 </div>';
+var point38 = new google.maps.LatLng(38.965833736 ,-77.17124183 );
+var marker38 = new google.maps.Marker({
+position: point38 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker38 , "click", function() {
+infowindow.setContent(info38 );
+infowindow.open(map,marker38 );
+});
+var info39 = '<div style="width:150px;">grid: -6,4 <br>lat: 38.958580989 <br>lon: -77.17124183 <br>pca: 8196 <br>lmax: 59.3 </div>';
+var point39 = new google.maps.LatLng(38.958580989 ,-77.17124183 );
+var marker39 = new google.maps.Marker({
+position: point39 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker39 , "click", function() {
+infowindow.setContent(info39 );
+infowindow.open(map,marker39 );
+});
+var info40 = '<div style="width:150px;">grid: -6,3 <br>lat: 38.951328242 <br>lon: -77.17124183 <br>pca: 9162 <br>lmax: 56.8 </div>';
+var point40 = new google.maps.LatLng(38.951328242 ,-77.17124183 );
+var marker40 = new google.maps.Marker({
+position: point40 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker40 , "click", function() {
+infowindow.setContent(info40 );
+infowindow.open(map,marker40 );
+});
+var info41 = '<div style="width:150px;">grid: -6,2 <br>lat: 38.944075495 <br>lon: -77.17124183 <br>pca: 10446 <br>lmax: 53.7 </div>';
+var point41 = new google.maps.LatLng(38.944075495 ,-77.17124183 );
+var marker41 = new google.maps.Marker({
+position: point41 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker41 , "click", function() {
+infowindow.setContent(info41 );
+infowindow.open(map,marker41 );
+});
+var info42 = '<div style="width:150px;">grid: -6,1 <br>lat: 38.936822747 <br>lon: -77.17124183 <br>pca: 11817 <br>lmax: 50.3 </div>';
+var point42 = new google.maps.LatLng(38.936822747 ,-77.17124183 );
+var marker42 = new google.maps.Marker({
+position: point42 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker42 , "click", function() {
+infowindow.setContent(info42 );
+infowindow.open(map,marker42 );
+});
+var info43 = '<div style="width:150px;">grid: -6,0 <br>lat: 38.92957 <br>lon: -77.17124183 <br>pca: 13245 <br>lmax: 46.8 </div>';
+var point43 = new google.maps.LatLng(38.92957 ,-77.17124183 );
+var marker43 = new google.maps.Marker({
+position: point43 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker43 , "click", function() {
+infowindow.setContent(info43 );
+infowindow.open(map,marker43 );
+});
+var info44 = '<div style="width:150px;">grid: -6,-1 <br>lat: 38.922317253 <br>lon: -77.17124183 <br>pca: 14765 <br>lmax: 42.9 </div>';
+var point44 = new google.maps.LatLng(38.922317253 ,-77.17124183 );
+var marker44 = new google.maps.Marker({
+position: point44 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker44 , "click", function() {
+infowindow.setContent(info44 );
+infowindow.open(map,marker44 );
+});
+var info45 = '<div style="width:150px;">grid: -6,-2 <br>lat: 38.915064505 <br>lon: -77.17124183 <br>pca: 16455 <br>lmax: . </div>';
+var point45 = new google.maps.LatLng(38.915064505 ,-77.17124183 );
+var marker45 = new google.maps.Marker({
+position: point45 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker45 , "click", function() {
+infowindow.setContent(info45 );
+infowindow.open(map,marker45 );
+});
+var info46 = '<div style="width:150px;">grid: -6,-3 <br>lat: 38.907811758 <br>lon: -77.17124183 <br>pca: 18083 <br>lmax: . </div>';
+var point46 = new google.maps.LatLng(38.907811758 ,-77.17124183 );
+var marker46 = new google.maps.Marker({
+position: point46 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker46 , "click", function() {
+infowindow.setContent(info46 );
+infowindow.open(map,marker46 );
+});
+var info47 = '<div style="width:150px;">grid: -6,-4 <br>lat: 38.900559011 <br>lon: -77.17124183 <br>pca: 19801 <br>lmax: . </div>';
+var point47 = new google.maps.LatLng(38.900559011 ,-77.17124183 );
+var marker47 = new google.maps.Marker({
+position: point47 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker47 , "click", function() {
+infowindow.setContent(info47 );
+infowindow.open(map,marker47 );
+});
+var info48 = '<div style="width:150px;">grid: -6,-5 <br>lat: 38.893306264 <br>lon: -77.17124183 <br>pca: 21513 <br>lmax: . </div>';
+var point48 = new google.maps.LatLng(38.893306264 ,-77.17124183 );
+var marker48 = new google.maps.Marker({
+position: point48 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker48 , "click", function() {
+infowindow.setContent(info48 );
+infowindow.open(map,marker48 );
+});
+var info49 = '<div style="width:150px;">grid: -6,-6 <br>lat: 38.886053516 <br>lon: -77.17124183 <br>pca: 23082 <br>lmax: . </div>';
+var point49 = new google.maps.LatLng(38.886053516 ,-77.17124183 );
+var marker49 = new google.maps.Marker({
+position: point49 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker49 , "click", function() {
+infowindow.setContent(info49 );
+infowindow.open(map,marker49 );
+});
+var info50 = '<div style="width:150px;">grid: -6,-7 <br>lat: 38.878800769 <br>lon: -77.17124183 <br>pca: 24801 <br>lmax: . </div>';
+var point50 = new google.maps.LatLng(38.878800769 ,-77.17124183 );
+var marker50 = new google.maps.Marker({
+position: point50 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker50 , "click", function() {
+infowindow.setContent(info50 );
+infowindow.open(map,marker50 );
+});
+var info51 = '<div style="width:150px;">grid: -6,-8 <br>lat: 38.871548022 <br>lon: -77.17124183 <br>pca: 26485 <br>lmax: . </div>';
+var point51 = new google.maps.LatLng(38.871548022 ,-77.17124183 );
+var marker51 = new google.maps.Marker({
+position: point51 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker51 , "click", function() {
+infowindow.setContent(info51 );
+infowindow.open(map,marker51 );
+});
+var info52 = '<div style="width:150px;">grid: -5,8 <br>lat: 38.987591978 <br>lon: -77.16208153 <br>pca: 8896 <br>lmax: 57.6 </div>';
+var point52 = new google.maps.LatLng(38.987591978 ,-77.16208153 );
+var marker52 = new google.maps.Marker({
+position: point52 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker52 , "click", function() {
+infowindow.setContent(info52 );
+infowindow.open(map,marker52 );
+});
+var info53 = '<div style="width:150px;">grid: -5,7 <br>lat: 38.980339231 <br>lon: -77.16208153 <br>pca: 7882 <br>lmax: 60 </div>';
+var point53 = new google.maps.LatLng(38.980339231 ,-77.16208153 );
+var marker53 = new google.maps.Marker({
+position: point53 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker53 , "click", function() {
+infowindow.setContent(info53 );
+infowindow.open(map,marker53 );
+});
+var info54 = '<div style="width:150px;">grid: -5,6 <br>lat: 38.973086484 <br>lon: -77.16208153 <br>pca: 7268 <br>lmax: 61.7 </div>';
+var point54 = new google.maps.LatLng(38.973086484 ,-77.16208153 );
+var marker54 = new google.maps.Marker({
+position: point54 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker54 , "click", function() {
+infowindow.setContent(info54 );
+infowindow.open(map,marker54 );
+});
+var info55 = '<div style="width:150px;">grid: -5,5 <br>lat: 38.965833736 <br>lon: -77.16208153 <br>pca: 6965 <br>lmax: 62.3 </div>';
+var point55 = new google.maps.LatLng(38.965833736 ,-77.16208153 );
+var marker55 = new google.maps.Marker({
+position: point55 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker55 , "click", function() {
+infowindow.setContent(info55 );
+infowindow.open(map,marker55 );
+});
+var info56 = '<div style="width:150px;">grid: -5,4 <br>lat: 38.958580989 <br>lon: -77.16208153 <br>pca: 7165 <br>lmax: 61.9 </div>';
+var point56 = new google.maps.LatLng(38.958580989 ,-77.16208153 );
+var marker56 = new google.maps.Marker({
+position: point56 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker56 , "click", function() {
+infowindow.setContent(info56 );
+infowindow.open(map,marker56 );
+});
+var info57 = '<div style="width:150px;">grid: -5,3 <br>lat: 38.951328242 <br>lon: -77.16208153 <br>pca: 7887 <br>lmax: 60.1 </div>';
+var point57 = new google.maps.LatLng(38.951328242 ,-77.16208153 );
+var marker57 = new google.maps.Marker({
+position: point57 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker57 , "click", function() {
+infowindow.setContent(info57 );
+infowindow.open(map,marker57 );
+});
+var info58 = '<div style="width:150px;">grid: -5,2 <br>lat: 38.944075495 <br>lon: -77.16208153 <br>pca: 8876 <br>lmax: 57.6 </div>';
+var point58 = new google.maps.LatLng(38.944075495 ,-77.16208153 );
+var marker58 = new google.maps.Marker({
+position: point58 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker58 , "click", function() {
+infowindow.setContent(info58 );
+infowindow.open(map,marker58 );
+});
+var info59 = '<div style="width:150px;">grid: -5,1 <br>lat: 38.936822747 <br>lon: -77.16208153 <br>pca: 10091 <br>lmax: 54.5 </div>';
+var point59 = new google.maps.LatLng(38.936822747 ,-77.16208153 );
+var marker59 = new google.maps.Marker({
+position: point59 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker59 , "click", function() {
+infowindow.setContent(info59 );
+infowindow.open(map,marker59 );
+});
+var info60 = '<div style="width:150px;">grid: -5,0 <br>lat: 38.92957 <br>lon: -77.16208153 <br>pca: 11435 <br>lmax: 51.1 </div>';
+var point60 = new google.maps.LatLng(38.92957 ,-77.16208153 );
+var marker60 = new google.maps.Marker({
+position: point60 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker60 , "click", function() {
+infowindow.setContent(info60 );
+infowindow.open(map,marker60 );
+});
+var info61 = '<div style="width:150px;">grid: -5,-1 <br>lat: 38.922317253 <br>lon: -77.16208153 <br>pca: 13019 <br>lmax: 47.4 </div>';
+var point61 = new google.maps.LatLng(38.922317253 ,-77.16208153 );
+var marker61 = new google.maps.Marker({
+position: point61 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker61 , "click", function() {
+infowindow.setContent(info61 );
+infowindow.open(map,marker61 );
+});
+var info62 = '<div style="width:150px;">grid: -5,-2 <br>lat: 38.915064505 <br>lon: -77.16208153 <br>pca: 14579 <br>lmax: 43.2 </div>';
+var point62 = new google.maps.LatLng(38.915064505 ,-77.16208153 );
+var marker62 = new google.maps.Marker({
+position: point62 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker62 , "click", function() {
+infowindow.setContent(info62 );
+infowindow.open(map,marker62 );
+});
+var info63 = '<div style="width:150px;">grid: -5,-3 <br>lat: 38.907811758 <br>lon: -77.16208153 <br>pca: 16252 <br>lmax: . </div>';
+var point63 = new google.maps.LatLng(38.907811758 ,-77.16208153 );
+var marker63 = new google.maps.Marker({
+position: point63 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker63 , "click", function() {
+infowindow.setContent(info63 );
+infowindow.open(map,marker63 );
+});
+var info64 = '<div style="width:150px;">grid: -5,-4 <br>lat: 38.900559011 <br>lon: -77.16208153 <br>pca: 17931 <br>lmax: . </div>';
+var point64 = new google.maps.LatLng(38.900559011 ,-77.16208153 );
+var marker64 = new google.maps.Marker({
+position: point64 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker64 , "click", function() {
+infowindow.setContent(info64 );
+infowindow.open(map,marker64 );
+});
+var info65 = '<div style="width:150px;">grid: -5,-5 <br>lat: 38.893306264 <br>lon: -77.16208153 <br>pca: 19489 <br>lmax: . </div>';
+var point65 = new google.maps.LatLng(38.893306264 ,-77.16208153 );
+var marker65 = new google.maps.Marker({
+position: point65 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker65 , "click", function() {
+infowindow.setContent(info65 );
+infowindow.open(map,marker65 );
+});
+var info66 = '<div style="width:150px;">grid: -5,-6 <br>lat: 38.886053516 <br>lon: -77.16208153 <br>pca: 21181 <br>lmax: . </div>';
+var point66 = new google.maps.LatLng(38.886053516 ,-77.16208153 );
+var marker66 = new google.maps.Marker({
+position: point66 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker66 , "click", function() {
+infowindow.setContent(info66 );
+infowindow.open(map,marker66 );
+});
+var info67 = '<div style="width:150px;">grid: -5,-7 <br>lat: 38.878800769 <br>lon: -77.16208153 <br>pca: 22844 <br>lmax: . </div>';
+var point67 = new google.maps.LatLng(38.878800769 ,-77.16208153 );
+var marker67 = new google.maps.Marker({
+position: point67 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker67 , "click", function() {
+infowindow.setContent(info67 );
+infowindow.open(map,marker67 );
+});
+var info68 = '<div style="width:150px;">grid: -5,-8 <br>lat: 38.871548022 <br>lon: -77.16208153 <br>pca: 24402 <br>lmax: . </div>';
+var point68 = new google.maps.LatLng(38.871548022 ,-77.16208153 );
+var marker68 = new google.maps.Marker({
+position: point68 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker68 , "click", function() {
+infowindow.setContent(info68 );
+infowindow.open(map,marker68 );
+});
+var info69 = '<div style="width:150px;">grid: -4,8 <br>lat: 38.987591978 <br>lon: -77.15292122 <br>pca: 9842 <br>lmax: 55.4 </div>';
+var point69 = new google.maps.LatLng(38.987591978 ,-77.15292122 );
+var marker69 = new google.maps.Marker({
+position: point69 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker69 , "click", function() {
+infowindow.setContent(info69 );
+infowindow.open(map,marker69 );
+});
+var info70 = '<div style="width:150px;">grid: -4,7 <br>lat: 38.980339231 <br>lon: -77.15292122 <br>pca: 8579 <br>lmax: 58.5 </div>';
+var point70 = new google.maps.LatLng(38.980339231 ,-77.15292122 );
+var marker70 = new google.maps.Marker({
+position: point70 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker70 , "click", function() {
+infowindow.setContent(info70 );
+infowindow.open(map,marker70 );
+});
+var info71 = '<div style="width:150px;">grid: -4,6 <br>lat: 38.973086484 <br>lon: -77.15292122 <br>pca: 7576 <br>lmax: 61 </div>';
+var point71 = new google.maps.LatLng(38.973086484 ,-77.15292122 );
+var marker71 = new google.maps.Marker({
+position: point71 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker71 , "click", function() {
+infowindow.setContent(info71 );
+infowindow.open(map,marker71 );
+});
+var info72 = '<div style="width:150px;">grid: -4,5 <br>lat: 38.965833736 <br>lon: -77.15292122 <br>pca: 6801 <br>lmax: 62.9 </div>';
+var point72 = new google.maps.LatLng(38.965833736 ,-77.15292122 );
+var marker72 = new google.maps.Marker({
+position: point72 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker72 , "click", function() {
+infowindow.setContent(info72 );
+infowindow.open(map,marker72 );
+});
+var info73 = '<div style="width:150px;">grid: -4,4 <br>lat: 38.958580989 <br>lon: -77.15292122 <br>pca: 6544 <br>lmax: 63.5 </div>';
+var point73 = new google.maps.LatLng(38.958580989 ,-77.15292122 );
+var marker73 = new google.maps.Marker({
+position: point73 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker73 , "click", function() {
+infowindow.setContent(info73 );
+infowindow.open(map,marker73 );
+});
+var info74 = '<div style="width:150px;">grid: -4,3 <br>lat: 38.951328242 <br>lon: -77.15292122 <br>pca: 6742 <br>lmax: 63.2 </div>';
+var point74 = new google.maps.LatLng(38.951328242 ,-77.15292122 );
+var marker74 = new google.maps.Marker({
+position: point74 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker74 , "click", function() {
+infowindow.setContent(info74 );
+infowindow.open(map,marker74 );
+});
+var info75 = '<div style="width:150px;">grid: -4,2 <br>lat: 38.944075495 <br>lon: -77.15292122 <br>pca: 7410 <br>lmax: 61.3 </div>';
+var point75 = new google.maps.LatLng(38.944075495 ,-77.15292122 );
+var marker75 = new google.maps.Marker({
+position: point75 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker75 , "click", function() {
+infowindow.setContent(info75 );
+infowindow.open(map,marker75 );
+});
+var info76 = '<div style="width:150px;">grid: -4,1 <br>lat: 38.936822747 <br>lon: -77.15292122 <br>pca: 8428 <br>lmax: 58.6 </div>';
+var point76 = new google.maps.LatLng(38.936822747 ,-77.15292122 );
+var marker76 = new google.maps.Marker({
+position: point76 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker76 , "click", function() {
+infowindow.setContent(info76 );
+infowindow.open(map,marker76 );
+});
+var info77 = '<div style="width:150px;">grid: -4,0 <br>lat: 38.92957 <br>lon: -77.15292122 <br>pca: 9788 <br>lmax: 55.5 </div>';
+var point77 = new google.maps.LatLng(38.92957 ,-77.15292122 );
+var marker77 = new google.maps.Marker({
+position: point77 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker77 , "click", function() {
+infowindow.setContent(info77 );
+infowindow.open(map,marker77 );
+});
+var info78 = '<div style="width:150px;">grid: -4,-1 <br>lat: 38.922317253 <br>lon: -77.15292122 <br>pca: 11209 <br>lmax: 51.9 </div>';
+var point78 = new google.maps.LatLng(38.922317253 ,-77.15292122 );
+var marker78 = new google.maps.Marker({
+position: point78 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker78 , "click", function() {
+infowindow.setContent(info78 );
+infowindow.open(map,marker78 );
+});
+var info79 = '<div style="width:150px;">grid: -4,-2 <br>lat: 38.915064505 <br>lon: -77.15292122 <br>pca: 12796 <br>lmax: 47.9 </div>';
+var point79 = new google.maps.LatLng(38.915064505 ,-77.15292122 );
+var marker79 = new google.maps.Marker({
+position: point79 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker79 , "click", function() {
+infowindow.setContent(info79 );
+infowindow.open(map,marker79 );
+});
+var info80 = '<div style="width:150px;">grid: -4,-3 <br>lat: 38.907811758 <br>lon: -77.15292122 <br>pca: 14415 <br>lmax: 43.4 </div>';
+var point80 = new google.maps.LatLng(38.907811758 ,-77.15292122 );
+var marker80 = new google.maps.Marker({
+position: point80 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker80 , "click", function() {
+infowindow.setContent(info80 );
+infowindow.open(map,marker80 );
+});
+var info81 = '<div style="width:150px;">grid: -4,-4 <br>lat: 38.900559011 <br>lon: -77.15292122 <br>pca: 15951 <br>lmax: . </div>';
+var point81 = new google.maps.LatLng(38.900559011 ,-77.15292122 );
+var marker81 = new google.maps.Marker({
+position: point81 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker81 , "click", function() {
+infowindow.setContent(info81 );
+infowindow.open(map,marker81 );
+});
+var info82 = '<div style="width:150px;">grid: -4,-5 <br>lat: 38.893306264 <br>lon: -77.15292122 <br>pca: 17590 <br>lmax: . </div>';
+var point82 = new google.maps.LatLng(38.893306264 ,-77.15292122 );
+var marker82 = new google.maps.Marker({
+position: point82 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker82 , "click", function() {
+infowindow.setContent(info82 );
+infowindow.open(map,marker82 );
+});
+var info83 = '<div style="width:150px;">grid: -4,-6 <br>lat: 38.886053516 <br>lon: -77.15292122 <br>pca: 19230 <br>lmax: . </div>';
+var point83 = new google.maps.LatLng(38.886053516 ,-77.15292122 );
+var marker83 = new google.maps.Marker({
+position: point83 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker83 , "click", function() {
+infowindow.setContent(info83 );
+infowindow.open(map,marker83 );
+});
+var info84 = '<div style="width:150px;">grid: -4,-7 <br>lat: 38.878800769 <br>lon: -77.15292122 <br>pca: 20786 <br>lmax: . </div>';
+var point84 = new google.maps.LatLng(38.878800769 ,-77.15292122 );
+var marker84 = new google.maps.Marker({
+position: point84 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker84 , "click", function() {
+infowindow.setContent(info84 );
+infowindow.open(map,marker84 );
+});
+var info85 = '<div style="width:150px;">grid: -4,-8 <br>lat: 38.871548022 <br>lon: -77.15292122 <br>pca: 22361 <br>lmax: . </div>';
+var point85 = new google.maps.LatLng(38.871548022 ,-77.15292122 );
+var marker85 = new google.maps.Marker({
+position: point85 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker85 , "click", function() {
+infowindow.setContent(info85 );
+infowindow.open(map,marker85 );
+});
+var info86 = '<div style="width:150px;">grid: -3,8 <br>lat: 38.987591978 <br>lon: -77.14376092 <br>pca: 11041 <br>lmax: 52.2 </div>';
+var point86 = new google.maps.LatLng(38.987591978 ,-77.14376092 );
+var marker86 = new google.maps.Marker({
+position: point86 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker86 , "click", function() {
+infowindow.setContent(info86 );
+infowindow.open(map,marker86 );
+});
+var info87 = '<div style="width:150px;">grid: -3,7 <br>lat: 38.980339231 <br>lon: -77.14376092 <br>pca: 9638 <br>lmax: 55.8 </div>';
+var point87 = new google.maps.LatLng(38.980339231 ,-77.14376092 );
+var marker87 = new google.maps.Marker({
+position: point87 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker87 , "click", function() {
+infowindow.setContent(info87 );
+infowindow.open(map,marker87 );
+});
+var info88 = '<div style="width:150px;">grid: -3,6 <br>lat: 38.973086484 <br>lon: -77.14376092 <br>pca: 8288 <br>lmax: 59 </div>';
+var point88 = new google.maps.LatLng(38.973086484 ,-77.14376092 );
+var marker88 = new google.maps.Marker({
+position: point88 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker88 , "click", function() {
+infowindow.setContent(info88 );
+infowindow.open(map,marker88 );
+});
+var info89 = '<div style="width:150px;">grid: -3,5 <br>lat: 38.965833736 <br>lon: -77.14376092 <br>pca: 7140 <br>lmax: 62.3 </div>';
+var point89 = new google.maps.LatLng(38.965833736 ,-77.14376092 );
+var marker89 = new google.maps.Marker({
+position: point89 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker89 , "click", function() {
+infowindow.setContent(info89 );
+infowindow.open(map,marker89 );
+});
+var info90 = '<div style="width:150px;">grid: -3,4 <br>lat: 38.958580989 <br>lon: -77.14376092 <br>pca: 6297 <br>lmax: 64.3 </div>';
+var point90 = new google.maps.LatLng(38.958580989 ,-77.14376092 );
+var marker90 = new google.maps.Marker({
+position: point90 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker90 , "click", function() {
+infowindow.setContent(info90 );
+infowindow.open(map,marker90 );
+});
+var info91 = '<div style="width:150px;">grid: -3,3 <br>lat: 38.951328242 <br>lon: -77.14376092 <br>pca: 5960 <br>lmax: 64.9 </div>';
+var point91 = new google.maps.LatLng(38.951328242 ,-77.14376092 );
+var marker91 = new google.maps.Marker({
+position: point91 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker91 , "click", function() {
+infowindow.setContent(info91 );
+infowindow.open(map,marker91 );
+});
+var info92 = '<div style="width:150px;">grid: -3,2 <br>lat: 38.944075495 <br>lon: -77.14376092 <br>pca: 6232 <br>lmax: 64.1 </div>';
+var point92 = new google.maps.LatLng(38.944075495 ,-77.14376092 );
+var marker92 = new google.maps.Marker({
+position: point92 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker92 , "click", function() {
+infowindow.setContent(info92 );
+infowindow.open(map,marker92 );
+});
+var info93 = '<div style="width:150px;">grid: -3,1 <br>lat: 38.936822747 <br>lon: -77.14376092 <br>pca: 7046 <br>lmax: 62.3 </div>';
+var point93 = new google.maps.LatLng(38.936822747 ,-77.14376092 );
+var marker93 = new google.maps.Marker({
+position: point93 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker93 , "click", function() {
+infowindow.setContent(info93 );
+infowindow.open(map,marker93 );
+});
+var info94 = '<div style="width:150px;">grid: -3,0 <br>lat: 38.92957 <br>lon: -77.14376092 <br>pca: 8141 <br>lmax: 59.3 </div>';
+var point94 = new google.maps.LatLng(38.92957 ,-77.14376092 );
+var marker94 = new google.maps.Marker({
+position: point94 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker94 , "click", function() {
+infowindow.setContent(info94 );
+infowindow.open(map,marker94 );
+});
+var info95 = '<div style="width:150px;">grid: -3,-1 <br>lat: 38.922317253 <br>lon: -77.14376092 <br>pca: 9533 <br>lmax: 56 </div>';
+var point95 = new google.maps.LatLng(38.922317253 ,-77.14376092 );
+var marker95 = new google.maps.Marker({
+position: point95 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker95 , "click", function() {
+infowindow.setContent(info95 );
+infowindow.open(map,marker95 );
+});
+var info96 = '<div style="width:150px;">grid: -3,-2 <br>lat: 38.915064505 <br>lon: -77.14376092 <br>pca: 11027 <br>lmax: 52.3 </div>';
+var point96 = new google.maps.LatLng(38.915064505 ,-77.14376092 );
+var marker96 = new google.maps.Marker({
+position: point96 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker96 , "click", function() {
+infowindow.setContent(info96 );
+infowindow.open(map,marker96 );
+});
+var info97 = '<div style="width:150px;">grid: -3,-3 <br>lat: 38.907811758 <br>lon: -77.14376092 <br>pca: 12514 <br>lmax: 48.6 </div>';
+var point97 = new google.maps.LatLng(38.907811758 ,-77.14376092 );
+var marker97 = new google.maps.Marker({
+position: point97 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker97 , "click", function() {
+infowindow.setContent(info97 );
+infowindow.open(map,marker97 );
+});
+var info98 = '<div style="width:150px;">grid: -3,-4 <br>lat: 38.900559011 <br>lon: -77.14376092 <br>pca: 14058 <br>lmax: 44.7 </div>';
+var point98 = new google.maps.LatLng(38.900559011 ,-77.14376092 );
+var marker98 = new google.maps.Marker({
+position: point98 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker98 , "click", function() {
+infowindow.setContent(info98 );
+infowindow.open(map,marker98 );
+});
+var info99 = '<div style="width:150px;">grid: -3,-5 <br>lat: 38.893306264 <br>lon: -77.14376092 <br>pca: 15663 <br>lmax: . </div>';
+var point99 = new google.maps.LatLng(38.893306264 ,-77.14376092 );
+var marker99 = new google.maps.Marker({
+position: point99 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker99 , "click", function() {
+infowindow.setContent(info99 );
+infowindow.open(map,marker99 );
+});
+var info100 = '<div style="width:150px;">grid: -3,-6 <br>lat: 38.886053516 <br>lon: -77.14376092 <br>pca: 17212 <br>lmax: . </div>';
+var point100 = new google.maps.LatLng(38.886053516 ,-77.14376092 );
+var marker100 = new google.maps.Marker({
+position: point100 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker100 , "click", function() {
+infowindow.setContent(info100 );
+infowindow.open(map,marker100 );
+});
+var info101 = '<div style="width:150px;">grid: -3,-7 <br>lat: 38.878800769 <br>lon: -77.14376092 <br>pca: 18753 <br>lmax: . </div>';
+var point101 = new google.maps.LatLng(38.878800769 ,-77.14376092 );
+var marker101 = new google.maps.Marker({
+position: point101 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker101 , "click", function() {
+infowindow.setContent(info101 );
+infowindow.open(map,marker101 );
+});
+var info102 = '<div style="width:150px;">grid: -3,-8 <br>lat: 38.871548022 <br>lon: -77.14376092 <br>pca: 20381 <br>lmax: . </div>';
+var point102 = new google.maps.LatLng(38.871548022 ,-77.14376092 );
+var marker102 = new google.maps.Marker({
+position: point102 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker102 , "click", function() {
+infowindow.setContent(info102 );
+infowindow.open(map,marker102 );
+});
+var info103 = '<div style="width:150px;">grid: -2,8 <br>lat: 38.987591978 <br>lon: -77.13460061 <br>pca: 12481 <br>lmax: 48.7 </div>';
+var point103 = new google.maps.LatLng(38.987591978 ,-77.13460061 );
+var marker103 = new google.maps.Marker({
+position: point103 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker103 , "click", function() {
+infowindow.setContent(info103 );
+infowindow.open(map,marker103 );
+});
+var info104 = '<div style="width:150px;">grid: -2,7 <br>lat: 38.980339231 <br>lon: -77.13460061 <br>pca: 10893 <br>lmax: 52.4 </div>';
+var point104 = new google.maps.LatLng(38.980339231 ,-77.13460061 );
+var marker104 = new google.maps.Marker({
+position: point104 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker104 , "click", function() {
+infowindow.setContent(info104 );
+infowindow.open(map,marker104 );
+});
+var info105 = '<div style="width:150px;">grid: -2,6 <br>lat: 38.973086484 <br>lon: -77.13460061 <br>pca: 9308 <br>lmax: 56.5 </div>';
+var point105 = new google.maps.LatLng(38.973086484 ,-77.13460061 );
+var marker105 = new google.maps.Marker({
+position: point105 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker105 , "click", function() {
+infowindow.setContent(info105 );
+infowindow.open(map,marker105 );
+});
+var info106 = '<div style="width:150px;">grid: -2,5 <br>lat: 38.965833736 <br>lon: -77.13460061 <br>pca: 7835 <br>lmax: 60.1 </div>';
+var point106 = new google.maps.LatLng(38.965833736 ,-77.13460061 );
+var marker106 = new google.maps.Marker({
+position: point106 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker106 , "click", function() {
+infowindow.setContent(info106 );
+infowindow.open(map,marker106 );
+});
+var info107 = '<div style="width:150px;">grid: -2,4 <br>lat: 38.958580989 <br>lon: -77.13460061 <br>pca: 6609 <br>lmax: 63.4 </div>';
+var point107 = new google.maps.LatLng(38.958580989 ,-77.13460061 );
+var marker107 = new google.maps.Marker({
+position: point107 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker107 , "click", function() {
+infowindow.setContent(info107 );
+infowindow.open(map,marker107 );
+});
+var info108 = '<div style="width:150px;">grid: -2,3 <br>lat: 38.951328242 <br>lon: -77.13460061 <br>pca: 5847 <br>lmax: 65.3 </div>';
+var point108 = new google.maps.LatLng(38.951328242 ,-77.13460061 );
+var marker108 = new google.maps.Marker({
+position: point108 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker108 , "click", function() {
+infowindow.setContent(info108 );
+infowindow.open(map,marker108 );
+});
+var info109 = '<div style="width:150px;">grid: -2,2 <br>lat: 38.944075495 <br>lon: -77.13460061 <br>pca: 5569 <br>lmax: 66.1 </div>';
+var point109 = new google.maps.LatLng(38.944075495 ,-77.13460061 );
+var marker109 = new google.maps.Marker({
+position: point109 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker109 , "click", function() {
+infowindow.setContent(info109 );
+infowindow.open(map,marker109 );
+});
+var info110 = '<div style="width:150px;">grid: -2,1 <br>lat: 38.936822747 <br>lon: -77.13460061 <br>pca: 5870 <br>lmax: 65.3 </div>';
+var point110 = new google.maps.LatLng(38.936822747 ,-77.13460061 );
+var marker110 = new google.maps.Marker({
+position: point110 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker110 , "click", function() {
+infowindow.setContent(info110 );
+infowindow.open(map,marker110 );
+});
+var info111 = '<div style="width:150px;">grid: -2,0 <br>lat: 38.92957 <br>lon: -77.13460061 <br>pca: 6752 <br>lmax: 62.9 </div>';
+var point111 = new google.maps.LatLng(38.92957 ,-77.13460061 );
+var marker111 = new google.maps.Marker({
+position: point111 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker111 , "click", function() {
+infowindow.setContent(info111 );
+infowindow.open(map,marker111 );
+});
+var info112 = '<div style="width:150px;">grid: -2,-1 <br>lat: 38.922317253 <br>lon: -77.13460061 <br>pca: 7935 <br>lmax: 60 </div>';
+var point112 = new google.maps.LatLng(38.922317253 ,-77.13460061 );
+var marker112 = new google.maps.Marker({
+position: point112 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker112 , "click", function() {
+infowindow.setContent(info112 );
+infowindow.open(map,marker112 );
+});
+var info113 = '<div style="width:150px;">grid: -2,-2 <br>lat: 38.915064505 <br>lon: -77.13460061 <br>pca: 9290 <br>lmax: 56.6 </div>';
+var point113 = new google.maps.LatLng(38.915064505 ,-77.13460061 );
+var marker113 = new google.maps.Marker({
+position: point113 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker113 , "click", function() {
+infowindow.setContent(info113 );
+infowindow.open(map,marker113 );
+});
+var info114 = '<div style="width:150px;">grid: -2,-3 <br>lat: 38.907811758 <br>lon: -77.13460061 <br>pca: 10648 <br>lmax: 53.4 </div>';
+var point114 = new google.maps.LatLng(38.907811758 ,-77.13460061 );
+var marker114 = new google.maps.Marker({
+position: point114 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker114 , "click", function() {
+infowindow.setContent(info114 );
+infowindow.open(map,marker114 );
+});
+var info115 = '<div style="width:150px;">grid: -2,-4 <br>lat: 38.900559011 <br>lon: -77.13460061 <br>pca: 12182 <br>lmax: 49.3 </div>';
+var point115 = new google.maps.LatLng(38.900559011 ,-77.13460061 );
+var marker115 = new google.maps.Marker({
+position: point115 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker115 , "click", function() {
+infowindow.setContent(info115 );
+infowindow.open(map,marker115 );
+});
+var info116 = '<div style="width:150px;">grid: -2,-5 <br>lat: 38.893306264 <br>lon: -77.13460061 <br>pca: 13709 <br>lmax: 45.7 </div>';
+var point116 = new google.maps.LatLng(38.893306264 ,-77.13460061 );
+var marker116 = new google.maps.Marker({
+position: point116 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker116 , "click", function() {
+infowindow.setContent(info116 );
+infowindow.open(map,marker116 );
+});
+var info117 = '<div style="width:150px;">grid: -2,-6 <br>lat: 38.886053516 <br>lon: -77.13460061 <br>pca: 15187 <br>lmax: . </div>';
+var point117 = new google.maps.LatLng(38.886053516 ,-77.13460061 );
+var marker117 = new google.maps.Marker({
+position: point117 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker117 , "click", function() {
+infowindow.setContent(info117 );
+infowindow.open(map,marker117 );
+});
+var info118 = '<div style="width:150px;">grid: -2,-7 <br>lat: 38.878800769 <br>lon: -77.13460061 <br>pca: 16753 <br>lmax: . </div>';
+var point118 = new google.maps.LatLng(38.878800769 ,-77.13460061 );
+var marker118 = new google.maps.Marker({
+position: point118 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker118 , "click", function() {
+infowindow.setContent(info118 );
+infowindow.open(map,marker118 );
+});
+var info119 = '<div style="width:150px;">grid: -2,-8 <br>lat: 38.871548022 <br>lon: -77.13460061 <br>pca: 18319 <br>lmax: . </div>';
+var point119 = new google.maps.LatLng(38.871548022 ,-77.13460061 );
+var marker119 = new google.maps.Marker({
+position: point119 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker119 , "click", function() {
+infowindow.setContent(info119 );
+infowindow.open(map,marker119 );
+});
+var info120 = '<div style="width:150px;">grid: -1,8 <br>lat: 38.987591978 <br>lon: -77.12544031 <br>pca: 14005 <br>lmax: 45 </div>';
+var point120 = new google.maps.LatLng(38.987591978 ,-77.12544031 );
+var marker120 = new google.maps.Marker({
+position: point120 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker120 , "click", function() {
+infowindow.setContent(info120 );
+infowindow.open(map,marker120 );
+});
+var info121 = '<div style="width:150px;">grid: -1,7 <br>lat: 38.980339231 <br>lon: -77.12544031 <br>pca: 12241 <br>lmax: 49 </div>';
+var point121 = new google.maps.LatLng(38.980339231 ,-77.12544031 );
+var marker121 = new google.maps.Marker({
+position: point121 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker121 , "click", function() {
+infowindow.setContent(info121 );
+infowindow.open(map,marker121 );
+});
+var info122 = '<div style="width:150px;">grid: -1,6 <br>lat: 38.973086484 <br>lon: -77.12544031 <br>pca: 10518 <br>lmax: 53.4 </div>';
+var point122 = new google.maps.LatLng(38.973086484 ,-77.12544031 );
+var marker122 = new google.maps.Marker({
+position: point122 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker122 , "click", function() {
+infowindow.setContent(info122 );
+infowindow.open(map,marker122 );
+});
+var info123 = '<div style="width:150px;">grid: -1,5 <br>lat: 38.965833736 <br>lon: -77.12544031 <br>pca: 8908 <br>lmax: 57.6 </div>';
+var point123 = new google.maps.LatLng(38.965833736 ,-77.12544031 );
+var marker123 = new google.maps.Marker({
+position: point123 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker123 , "click", function() {
+infowindow.setContent(info123 );
+infowindow.open(map,marker123 );
+});
+var info124 = '<div style="width:150px;">grid: -1,4 <br>lat: 38.958580989 <br>lon: -77.12544031 <br>pca: 7554 <br>lmax: 61 </div>';
+var point124 = new google.maps.LatLng(38.958580989 ,-77.12544031 );
+var marker124 = new google.maps.Marker({
+position: point124 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker124 , "click", function() {
+infowindow.setContent(info124 );
+infowindow.open(map,marker124 );
+});
+var info125 = '<div style="width:150px;">grid: -1,3 <br>lat: 38.951328242 <br>lon: -77.12544031 <br>pca: 6319 <br>lmax: 63.9 </div>';
+var point125 = new google.maps.LatLng(38.951328242 ,-77.12544031 );
+var marker125 = new google.maps.Marker({
+position: point125 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker125 , "click", function() {
+infowindow.setContent(info125 );
+infowindow.open(map,marker125 );
+});
+var info126 = '<div style="width:150px;">grid: -1,2 <br>lat: 38.944075495 <br>lon: -77.12544031 <br>pca: 5493 <br>lmax: 66.2 </div>';
+var point126 = new google.maps.LatLng(38.944075495 ,-77.12544031 );
+var marker126 = new google.maps.Marker({
+position: point126 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker126 , "click", function() {
+infowindow.setContent(info126 );
+infowindow.open(map,marker126 );
+});
+var info127 = '<div style="width:150px;">grid: -1,1 <br>lat: 38.936822747 <br>lon: -77.12544031 <br>pca: 5275 <br>lmax: 66.8 </div>';
+var point127 = new google.maps.LatLng(38.936822747 ,-77.12544031 );
+var marker127 = new google.maps.Marker({
+position: point127 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker127 , "click", function() {
+infowindow.setContent(info127 );
+infowindow.open(map,marker127 );
+});
+var info128 = '<div style="width:150px;">grid: -1,0 <br>lat: 38.92957 <br>lon: -77.12544031 <br>pca: 5646 <br>lmax: 65.9 </div>';
+var point128 = new google.maps.LatLng(38.92957 ,-77.12544031 );
+var marker128 = new google.maps.Marker({
+position: point128 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker128 , "click", function() {
+infowindow.setContent(info128 );
+infowindow.open(map,marker128 );
+});
+var info129 = '<div style="width:150px;">grid: -1,-1 <br>lat: 38.922317253 <br>lon: -77.12544031 <br>pca: 6499 <br>lmax: 63.8 </div>';
+var point129 = new google.maps.LatLng(38.922317253 ,-77.12544031 );
+var marker129 = new google.maps.Marker({
+position: point129 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker129 , "click", function() {
+infowindow.setContent(info129 );
+infowindow.open(map,marker129 );
+});
+var info130 = '<div style="width:150px;">grid: -1,-2 <br>lat: 38.915064505 <br>lon: -77.12544031 <br>pca: 7528 <br>lmax: 61 </div>';
+var point130 = new google.maps.LatLng(38.915064505 ,-77.12544031 );
+var marker130 = new google.maps.Marker({
+position: point130 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker130 , "click", function() {
+infowindow.setContent(info130 );
+infowindow.open(map,marker130 );
+});
+var info131 = '<div style="width:150px;">grid: -1,-3 <br>lat: 38.907811758 <br>lon: -77.12544031 <br>pca: 8888 <br>lmax: 57.7 </div>';
+var point131 = new google.maps.LatLng(38.907811758 ,-77.12544031 );
+var marker131 = new google.maps.Marker({
+position: point131 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker131 , "click", function() {
+infowindow.setContent(info131 );
+infowindow.open(map,marker131 );
+});
+var info132 = '<div style="width:150px;">grid: -1,-4 <br>lat: 38.900559011 <br>lon: -77.12544031 <br>pca: 10281 <br>lmax: 54.2 </div>';
+var point132 = new google.maps.LatLng(38.900559011 ,-77.12544031 );
+var marker132 = new google.maps.Marker({
+position: point132 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker132 , "click", function() {
+infowindow.setContent(info132 );
+infowindow.open(map,marker132 );
+});
+var info133 = '<div style="width:150px;">grid: -1,-5 <br>lat: 38.893306264 <br>lon: -77.12544031 <br>pca: 11661 <br>lmax: 50.8 </div>';
+var point133 = new google.maps.LatLng(38.893306264 ,-77.12544031 );
+var marker133 = new google.maps.Marker({
+position: point133 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker133 , "click", function() {
+infowindow.setContent(info133 );
+infowindow.open(map,marker133 );
+});
+var info134 = '<div style="width:150px;">grid: -1,-6 <br>lat: 38.886053516 <br>lon: -77.12544031 <br>pca: 13171 <br>lmax: 46.8 </div>';
+var point134 = new google.maps.LatLng(38.886053516 ,-77.12544031 );
+var marker134 = new google.maps.Marker({
+position: point134 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker134 , "click", function() {
+infowindow.setContent(info134 );
+infowindow.open(map,marker134 );
+});
+var info135 = '<div style="width:150px;">grid: -1,-7 <br>lat: 38.878800769 <br>lon: -77.12544031 <br>pca: 14720 <br>lmax: 43.2 </div>';
+var point135 = new google.maps.LatLng(38.878800769 ,-77.12544031 );
+var marker135 = new google.maps.Marker({
+position: point135 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker135 , "click", function() {
+infowindow.setContent(info135 );
+infowindow.open(map,marker135 );
+});
+var info136 = '<div style="width:150px;">grid: -1,-8 <br>lat: 38.871548022 <br>lon: -77.12544031 <br>pca: 16367 <br>lmax: . </div>';
+var point136 = new google.maps.LatLng(38.871548022 ,-77.12544031 );
+var marker136 = new google.maps.Marker({
+position: point136 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker136 , "click", function() {
+infowindow.setContent(info136 );
+infowindow.open(map,marker136 );
+});
+var info137 = '<div style="width:150px;">grid: 0,8 <br>lat: 38.987591978 <br>lon: -77.11628 <br>pca: 15509 <br>lmax: . </div>';
+var point137 = new google.maps.LatLng(38.987591978 ,-77.11628 );
+var marker137 = new google.maps.Marker({
+position: point137 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker137 , "click", function() {
+infowindow.setContent(info137 );
+infowindow.open(map,marker137 );
+});
+var info138 = '<div style="width:150px;">grid: 0,7 <br>lat: 38.980339231 <br>lon: -77.11628 <br>pca: 13690 <br>lmax: 45.4 </div>';
+var point138 = new google.maps.LatLng(38.980339231 ,-77.11628 );
+var marker138 = new google.maps.Marker({
+position: point138 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker138 , "click", function() {
+infowindow.setContent(info138 );
+infowindow.open(map,marker138 );
+});
+var info139 = '<div style="width:150px;">grid: 0,6 <br>lat: 38.973086484 <br>lon: -77.11628 <br>pca: 11940 <br>lmax: 49.9 </div>';
+var point139 = new google.maps.LatLng(38.973086484 ,-77.11628 );
+var marker139 = new google.maps.Marker({
+position: point139 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker139 , "click", function() {
+infowindow.setContent(info139 );
+infowindow.open(map,marker139 );
+});
+var info140 = '<div style="width:150px;">grid: 0,5 <br>lat: 38.965833736 <br>lon: -77.11628 <br>pca: 10367 <br>lmax: 53.8 </div>';
+var point140 = new google.maps.LatLng(38.965833736 ,-77.11628 );
+var marker140 = new google.maps.Marker({
+position: point140 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker140 , "click", function() {
+infowindow.setContent(info140 );
+infowindow.open(map,marker140 );
+});
+var info141 = '<div style="width:150px;">grid: 0,4 <br>lat: 38.958580989 <br>lon: -77.11628 <br>pca: 8739 <br>lmax: 57.9 </div>';
+var point141 = new google.maps.LatLng(38.958580989 ,-77.11628 );
+var marker141 = new google.maps.Marker({
+position: point141 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker141 , "click", function() {
+infowindow.setContent(info141 );
+infowindow.open(map,marker141 );
+});
+var info142 = '<div style="width:150px;">grid: 0,3 <br>lat: 38.951328242 <br>lon: -77.11628 <br>pca: 7309 <br>lmax: 61.6 </div>';
+var point142 = new google.maps.LatLng(38.951328242 ,-77.11628 );
+var marker142 = new google.maps.Marker({
+position: point142 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker142 , "click", function() {
+infowindow.setContent(info142 );
+infowindow.open(map,marker142 );
+});
+var info143 = '<div style="width:150px;">grid: 0,2 <br>lat: 38.944075495 <br>lon: -77.11628 <br>pca: 6132 <br>lmax: 64.4 </div>';
+var point143 = new google.maps.LatLng(38.944075495 ,-77.11628 );
+var marker143 = new google.maps.Marker({
+position: point143 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker143 , "click", function() {
+infowindow.setContent(info143 );
+infowindow.open(map,marker143 );
+});
+var info144 = '<div style="width:150px;">grid: 0,1 <br>lat: 38.936822747 <br>lon: -77.11628 <br>pca: 5323 <br>lmax: 66.5 </div>';
+var point144 = new google.maps.LatLng(38.936822747 ,-77.11628 );
+var marker144 = new google.maps.Marker({
+position: point144 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker144 , "click", function() {
+infowindow.setContent(info144 );
+infowindow.open(map,marker144 );
+});
+var info145 = '<div style="width:150px;">grid: 0,0 <br>lat: 38.92957 <br>lon: -77.11628 <br>pca: 5043 <br>lmax: 67 </div>';
+var point145 = new google.maps.LatLng(38.92957 ,-77.11628 );
+var marker145 = new google.maps.Marker({
+position: point145 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker145 , "click", function() {
+infowindow.setContent(info145 );
+infowindow.open(map,marker145 );
+});
+var info146 = '<div style="width:150px;">grid: 0,-1 <br>lat: 38.922317253 <br>lon: -77.11628 <br>pca: 5247 <br>lmax: 66.7 </div>';
+var point146 = new google.maps.LatLng(38.922317253 ,-77.11628 );
+var marker146 = new google.maps.Marker({
+position: point146 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker146 , "click", function() {
+infowindow.setContent(info146 );
+infowindow.open(map,marker146 );
+});
+var info147 = '<div style="width:150px;">grid: 0,-2 <br>lat: 38.915064505 <br>lon: -77.11628 <br>pca: 6029 <br>lmax: 64.8 </div>';
+var point147 = new google.maps.LatLng(38.915064505 ,-77.11628 );
+var marker147 = new google.maps.Marker({
+position: point147 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker147 , "click", function() {
+infowindow.setContent(info147 );
+infowindow.open(map,marker147 );
+});
+var info148 = '<div style="width:150px;">grid: 0,-3 <br>lat: 38.907811758 <br>lon: -77.11628 <br>pca: 7141 <br>lmax: 62 </div>';
+var point148 = new google.maps.LatLng(38.907811758 ,-77.11628 );
+var marker148 = new google.maps.Marker({
+position: point148 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker148 , "click", function() {
+infowindow.setContent(info148 );
+infowindow.open(map,marker148 );
+});
+var info149 = '<div style="width:150px;">grid: 0,-4 <br>lat: 38.900559011 <br>lon: -77.11628 <br>pca: 8298 <br>lmax: 59.1 </div>';
+var point149 = new google.maps.LatLng(38.900559011 ,-77.11628 );
+var marker149 = new google.maps.Marker({
+position: point149 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker149 , "click", function() {
+infowindow.setContent(info149 );
+infowindow.open(map,marker149 );
+});
+var info150 = '<div style="width:150px;">grid: 0,-5 <br>lat: 38.893306264 <br>lon: -77.11628 <br>pca: 9688 <br>lmax: 55.7 </div>';
+var point150 = new google.maps.LatLng(38.893306264 ,-77.11628 );
+var marker150 = new google.maps.Marker({
+position: point150 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker150 , "click", function() {
+infowindow.setContent(info150 );
+infowindow.open(map,marker150 );
+});
+var info151 = '<div style="width:150px;">grid: 0,-6 <br>lat: 38.886053516 <br>lon: -77.11628 <br>pca: 11195 <br>lmax: 52.2 </div>';
+var point151 = new google.maps.LatLng(38.886053516 ,-77.11628 );
+var marker151 = new google.maps.Marker({
+position: point151 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker151 , "click", function() {
+infowindow.setContent(info151 );
+infowindow.open(map,marker151 );
+});
+var info152 = '<div style="width:150px;">grid: 0,-7 <br>lat: 38.878800769 <br>lon: -77.11628 <br>pca: 12751 <br>lmax: 48 </div>';
+var point152 = new google.maps.LatLng(38.878800769 ,-77.11628 );
+var marker152 = new google.maps.Marker({
+position: point152 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker152 , "click", function() {
+infowindow.setContent(info152 );
+infowindow.open(map,marker152 );
+});
+var info153 = '<div style="width:150px;">grid: 0,-8 <br>lat: 38.871548022 <br>lon: -77.11628 <br>pca: 14434 <br>lmax: 43.7 </div>';
+var point153 = new google.maps.LatLng(38.871548022 ,-77.11628 );
+var marker153 = new google.maps.Marker({
+position: point153 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker153 , "click", function() {
+infowindow.setContent(info153 );
+infowindow.open(map,marker153 );
+});
+var info154 = '<div style="width:150px;">grid: 1,8 <br>lat: 38.987591978 <br>lon: -77.10711969 <br>pca: 17079 <br>lmax: . </div>';
+var point154 = new google.maps.LatLng(38.987591978 ,-77.10711969 );
+var marker154 = new google.maps.Marker({
+position: point154 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker154 , "click", function() {
+infowindow.setContent(info154 );
+infowindow.open(map,marker154 );
+});
+var info155 = '<div style="width:150px;">grid: 1,7 <br>lat: 38.980339231 <br>lon: -77.10711969 <br>pca: 15273 <br>lmax: . </div>';
+var point155 = new google.maps.LatLng(38.980339231 ,-77.10711969 );
+var marker155 = new google.maps.Marker({
+position: point155 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker155 , "click", function() {
+infowindow.setContent(info155 );
+infowindow.open(map,marker155 );
+});
+var info156 = '<div style="width:150px;">grid: 1,6 <br>lat: 38.973086484 <br>lon: -77.10711969 <br>pca: 13616 <br>lmax: 45.7 </div>';
+var point156 = new google.maps.LatLng(38.973086484 ,-77.10711969 );
+var marker156 = new google.maps.Marker({
+position: point156 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker156 , "click", function() {
+infowindow.setContent(info156 );
+infowindow.open(map,marker156 );
+});
+var info157 = '<div style="width:150px;">grid: 1,5 <br>lat: 38.965833736 <br>lon: -77.10711969 <br>pca: 11847 <br>lmax: 50.4 </div>';
+var point157 = new google.maps.LatLng(38.965833736 ,-77.10711969 );
+var marker157 = new google.maps.Marker({
+position: point157 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker157 , "click", function() {
+infowindow.setContent(info157 );
+infowindow.open(map,marker157 );
+});
+var info158 = '<div style="width:150px;">grid: 1,4 <br>lat: 38.958580989 <br>lon: -77.10711969 <br>pca: 10208 <br>lmax: 54.4 </div>';
+var point158 = new google.maps.LatLng(38.958580989 ,-77.10711969 );
+var marker158 = new google.maps.Marker({
+position: point158 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker158 , "click", function() {
+infowindow.setContent(info158 );
+infowindow.open(map,marker158 );
+});
+var info159 = '<div style="width:150px;">grid: 1,3 <br>lat: 38.951328242 <br>lon: -77.10711969 <br>pca: 8655 <br>lmax: 58.2 </div>';
+var point159 = new google.maps.LatLng(38.951328242 ,-77.10711969 );
+var marker159 = new google.maps.Marker({
+position: point159 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker159 , "click", function() {
+infowindow.setContent(info159 );
+infowindow.open(map,marker159 );
+});
+var info160 = '<div style="width:150px;">grid: 1,2 <br>lat: 38.944075495 <br>lon: -77.10711969 <br>pca: 7233 <br>lmax: 61.8 </div>';
+var point160 = new google.maps.LatLng(38.944075495 ,-77.10711969 );
+var marker160 = new google.maps.Marker({
+position: point160 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker160 , "click", function() {
+infowindow.setContent(info160 );
+infowindow.open(map,marker160 );
+});
+var info161 = '<div style="width:150px;">grid: 1,1 <br>lat: 38.936822747 <br>lon: -77.10711969 <br>pca: 6014 <br>lmax: 65 </div>';
+var point161 = new google.maps.LatLng(38.936822747 ,-77.10711969 );
+var marker161 = new google.maps.Marker({
+position: point161 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker161 , "click", function() {
+infowindow.setContent(info161 );
+infowindow.open(map,marker161 );
+});
+var info162 = '<div style="width:150px;">grid: 1,0 <br>lat: 38.92957 <br>lon: -77.10711969 <br>pca: 5091 <br>lmax: 67.1 </div>';
+var point162 = new google.maps.LatLng(38.92957 ,-77.10711969 );
+var marker162 = new google.maps.Marker({
+position: point162 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker162 , "click", function() {
+infowindow.setContent(info162 );
+infowindow.open(map,marker162 );
+});
+var info163 = '<div style="width:150px;">grid: 1,-1 <br>lat: 38.922317253 <br>lon: -77.10711969 <br>pca: 4610 <br>lmax: 68.2 </div>';
+var point163 = new google.maps.LatLng(38.922317253 ,-77.10711969 );
+var marker163 = new google.maps.Marker({
+position: point163 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker163 , "click", function() {
+infowindow.setContent(info163 );
+infowindow.open(map,marker163 );
+});
+var info164 = '<div style="width:150px;">grid: 1,-2 <br>lat: 38.915064505 <br>lon: -77.10711969 <br>pca: 4811 <br>lmax: 67.8 </div>';
+var point164 = new google.maps.LatLng(38.915064505 ,-77.10711969 );
+var marker164 = new google.maps.Marker({
+position: point164 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker164 , "click", function() {
+infowindow.setContent(info164 );
+infowindow.open(map,marker164 );
+});
+var info165 = '<div style="width:150px;">grid: 1,-3 <br>lat: 38.907811758 <br>lon: -77.10711969 <br>pca: 5414 <br>lmax: 66.4 </div>';
+var point165 = new google.maps.LatLng(38.907811758 ,-77.10711969 );
+var marker165 = new google.maps.Marker({
+position: point165 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker165 , "click", function() {
+infowindow.setContent(info165 );
+infowindow.open(map,marker165 );
+});
+var info166 = '<div style="width:150px;">grid: 1,-4 <br>lat: 38.900559011 <br>lon: -77.10711969 <br>pca: 6464 <br>lmax: 63.5 </div>';
+var point166 = new google.maps.LatLng(38.900559011 ,-77.10711969 );
+var marker166 = new google.maps.Marker({
+position: point166 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker166 , "click", function() {
+infowindow.setContent(info166 );
+infowindow.open(map,marker166 );
+});
+var info167 = '<div style="width:150px;">grid: 1,-5 <br>lat: 38.893306264 <br>lon: -77.10711969 <br>pca: 7845 <br>lmax: 60.2 </div>';
+var point167 = new google.maps.LatLng(38.893306264 ,-77.10711969 );
+var marker167 = new google.maps.Marker({
+position: point167 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker167 , "click", function() {
+infowindow.setContent(info167 );
+infowindow.open(map,marker167 );
+});
+var info168 = '<div style="width:150px;">grid: 1,-6 <br>lat: 38.886053516 <br>lon: -77.10711969 <br>pca: 9210 <br>lmax: 56.9 </div>';
+var point168 = new google.maps.LatLng(38.886053516 ,-77.10711969 );
+var marker168 = new google.maps.Marker({
+position: point168 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker168 , "click", function() {
+infowindow.setContent(info168 );
+infowindow.open(map,marker168 );
+});
+var info169 = '<div style="width:150px;">grid: 1,-7 <br>lat: 38.878800769 <br>lon: -77.10711969 <br>pca: 10833 <br>lmax: 52.7 </div>';
+var point169 = new google.maps.LatLng(38.878800769 ,-77.10711969 );
+var marker169 = new google.maps.Marker({
+position: point169 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker169 , "click", function() {
+infowindow.setContent(info169 );
+infowindow.open(map,marker169 );
+});
+var info170 = '<div style="width:150px;">grid: 1,-8 <br>lat: 38.871548022 <br>lon: -77.10711969 <br>pca: 12567 <br>lmax: 48.4 </div>';
+var point170 = new google.maps.LatLng(38.871548022 ,-77.10711969 );
+var marker170 = new google.maps.Marker({
+position: point170 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker170 , "click", function() {
+infowindow.setContent(info170 );
+infowindow.open(map,marker170 );
+});
+var info171 = '<div style="width:150px;">grid: 2,8 <br>lat: 38.987591978 <br>lon: -77.09795939 <br>pca: 18749 <br>lmax: . </div>';
+var point171 = new google.maps.LatLng(38.987591978 ,-77.09795939 );
+var marker171 = new google.maps.Marker({
+position: point171 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker171 , "click", function() {
+infowindow.setContent(info171 );
+infowindow.open(map,marker171 );
+});
+var info172 = '<div style="width:150px;">grid: 2,7 <br>lat: 38.980339231 <br>lon: -77.09795939 <br>pca: 17033 <br>lmax: . </div>';
+var point172 = new google.maps.LatLng(38.980339231 ,-77.09795939 );
+var marker172 = new google.maps.Marker({
+position: point172 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker172 , "click", function() {
+infowindow.setContent(info172 );
+infowindow.open(map,marker172 );
+});
+var info173 = '<div style="width:150px;">grid: 2,6 <br>lat: 38.973086484 <br>lon: -77.09795939 <br>pca: 15226 <br>lmax: . </div>';
+var point173 = new google.maps.LatLng(38.973086484 ,-77.09795939 );
+var marker173 = new google.maps.Marker({
+position: point173 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker173 , "click", function() {
+infowindow.setContent(info173 );
+infowindow.open(map,marker173 );
+});
+var info174 = '<div style="width:150px;">grid: 2,5 <br>lat: 38.965833736 <br>lon: -77.09795939 <br>pca: 13510 <br>lmax: 45.9 </div>';
+var point174 = new google.maps.LatLng(38.965833736 ,-77.09795939 );
+var marker174 = new google.maps.Marker({
+position: point174 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker174 , "click", function() {
+infowindow.setContent(info174 );
+infowindow.open(map,marker174 );
+});
+var info175 = '<div style="width:150px;">grid: 2,4 <br>lat: 38.958580989 <br>lon: -77.09795939 <br>pca: 11822 <br>lmax: 50.1 </div>';
+var point175 = new google.maps.LatLng(38.958580989 ,-77.09795939 );
+var marker175 = new google.maps.Marker({
+position: point175 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker175 , "click", function() {
+infowindow.setContent(info175 );
+infowindow.open(map,marker175 );
+});
+var info176 = '<div style="width:150px;">grid: 2,3 <br>lat: 38.951328242 <br>lon: -77.09795939 <br>pca: 10190 <br>lmax: 54.5 </div>';
+var point176 = new google.maps.LatLng(38.951328242 ,-77.09795939 );
+var marker176 = new google.maps.Marker({
+position: point176 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker176 , "click", function() {
+infowindow.setContent(info176 );
+infowindow.open(map,marker176 );
+});
+var info177 = '<div style="width:150px;">grid: 2,2 <br>lat: 38.944075495 <br>lon: -77.09795939 <br>pca: 8627 <br>lmax: 58.2 </div>';
+var point177 = new google.maps.LatLng(38.944075495 ,-77.09795939 );
+var marker177 = new google.maps.Marker({
+position: point177 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker177 , "click", function() {
+infowindow.setContent(info177 );
+infowindow.open(map,marker177 );
+});
+var info178 = '<div style="width:150px;">grid: 2,1 <br>lat: 38.936822747 <br>lon: -77.09795939 <br>pca: 7201 <br>lmax: 61.9 </div>';
+var point178 = new google.maps.LatLng(38.936822747 ,-77.09795939 );
+var marker178 = new google.maps.Marker({
+position: point178 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker178 , "click", function() {
+infowindow.setContent(info178 );
+infowindow.open(map,marker178 );
+});
+var info179 = '<div style="width:150px;">grid: 2,0 <br>lat: 38.92957 <br>lon: -77.09795939 <br>pca: 5805 <br>lmax: 65.2 </div>';
+var point179 = new google.maps.LatLng(38.92957 ,-77.09795939 );
+var marker179 = new google.maps.Marker({
+position: point179 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker179 , "click", function() {
+infowindow.setContent(info179 );
+infowindow.open(map,marker179 );
+});
+var info180 = '<div style="width:150px;">grid: 2,-1 <br>lat: 38.922317253 <br>lon: -77.09795939 <br>pca: 4740 <br>lmax: 68 </div>';
+var point180 = new google.maps.LatLng(38.922317253 ,-77.09795939 );
+var marker180 = new google.maps.Marker({
+position: point180 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker180 , "click", function() {
+infowindow.setContent(info180 );
+infowindow.open(map,marker180 );
+});
+var info181 = '<div style="width:150px;">grid: 2,-2 <br>lat: 38.915064505 <br>lon: -77.09795939 <br>pca: 4160 <br>lmax: 69.5 </div>';
+var point181 = new google.maps.LatLng(38.915064505 ,-77.09795939 );
+var marker181 = new google.maps.Marker({
+position: point181 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker181 , "click", function() {
+infowindow.setContent(info181 );
+infowindow.open(map,marker181 );
+});
+var info182 = '<div style="width:150px;">grid: 2,-3 <br>lat: 38.907811758 <br>lon: -77.09795939 <br>pca: 4156 <br>lmax: 69.4 </div>';
+var point182 = new google.maps.LatLng(38.907811758 ,-77.09795939 );
+var marker182 = new google.maps.Marker({
+position: point182 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker182 , "click", function() {
+infowindow.setContent(info182 );
+infowindow.open(map,marker182 );
+});
+var info183 = '<div style="width:150px;">grid: 2,-4 <br>lat: 38.900559011 <br>lon: -77.09795939 <br>pca: 4868 <br>lmax: 67.7 </div>';
+var point183 = new google.maps.LatLng(38.900559011 ,-77.09795939 );
+var marker183 = new google.maps.Marker({
+position: point183 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker183 , "click", function() {
+infowindow.setContent(info183 );
+infowindow.open(map,marker183 );
+});
+var info184 = '<div style="width:150px;">grid: 2,-5 <br>lat: 38.893306264 <br>lon: -77.09795939 <br>pca: 5885 <br>lmax: 65.3 </div>';
+var point184 = new google.maps.LatLng(38.893306264 ,-77.09795939 );
+var marker184 = new google.maps.Marker({
+position: point184 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker184 , "click", function() {
+infowindow.setContent(info184 );
+infowindow.open(map,marker184 );
+});
+var info185 = '<div style="width:150px;">grid: 2,-6 <br>lat: 38.886053516 <br>lon: -77.09795939 <br>pca: 7343 <br>lmax: 61.5 </div>';
+var point185 = new google.maps.LatLng(38.886053516 ,-77.09795939 );
+var marker185 = new google.maps.Marker({
+position: point185 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker185 , "click", function() {
+infowindow.setContent(info185 );
+infowindow.open(map,marker185 );
+});
+var info186 = '<div style="width:150px;">grid: 2,-7 <br>lat: 38.878800769 <br>lon: -77.09795939 <br>pca: 8978 <br>lmax: 57.4 </div>';
+var point186 = new google.maps.LatLng(38.878800769 ,-77.09795939 );
+var marker186 = new google.maps.Marker({
+position: point186 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker186 , "click", function() {
+infowindow.setContent(info186 );
+infowindow.open(map,marker186 );
+});
+var info187 = '<div style="width:150px;">grid: 2,-8 <br>lat: 38.871548022 <br>lon: -77.09795939 <br>pca: 10749 <br>lmax: 53.1 </div>';
+var point187 = new google.maps.LatLng(38.871548022 ,-77.09795939 );
+var marker187 = new google.maps.Marker({
+position: point187 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker187 , "click", function() {
+infowindow.setContent(info187 );
+infowindow.open(map,marker187 );
+});
+var info188 = '<div style="width:150px;">grid: 3,8 <br>lat: 38.987591978 <br>lon: -77.08879908 <br>pca: 20540 <br>lmax: . </div>';
+var point188 = new google.maps.LatLng(38.987591978 ,-77.08879908 );
+var marker188 = new google.maps.Marker({
+position: point188 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker188 , "click", function() {
+infowindow.setContent(info188 );
+infowindow.open(map,marker188 );
+});
+var info189 = '<div style="width:150px;">grid: 3,7 <br>lat: 38.980339231 <br>lon: -77.08879908 <br>pca: 18731 <br>lmax: . </div>';
+var point189 = new google.maps.LatLng(38.980339231 ,-77.08879908 );
+var marker189 = new google.maps.Marker({
+position: point189 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker189 , "click", function() {
+infowindow.setContent(info189 );
+infowindow.open(map,marker189 );
+});
+var info190 = '<div style="width:150px;">grid: 3,6 <br>lat: 38.973086484 <br>lon: -77.08879908 <br>pca: 16980 <br>lmax: . </div>';
+var point190 = new google.maps.LatLng(38.973086484 ,-77.08879908 );
+var marker190 = new google.maps.Marker({
+position: point190 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker190 , "click", function() {
+infowindow.setContent(info190 );
+infowindow.open(map,marker190 );
+});
+var info191 = '<div style="width:150px;">grid: 3,5 <br>lat: 38.965833736 <br>lon: -77.08879908 <br>pca: 15235 <br>lmax: . </div>';
+var point191 = new google.maps.LatLng(38.965833736 ,-77.08879908 );
+var marker191 = new google.maps.Marker({
+position: point191 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker191 , "click", function() {
+infowindow.setContent(info191 );
+infowindow.open(map,marker191 );
+});
+var info192 = '<div style="width:150px;">grid: 3,4 <br>lat: 38.958580989 <br>lon: -77.08879908 <br>pca: 13515 <br>lmax: 46.1 </div>';
+var point192 = new google.maps.LatLng(38.958580989 ,-77.08879908 );
+var marker192 = new google.maps.Marker({
+position: point192 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker192 , "click", function() {
+infowindow.setContent(info192 );
+infowindow.open(map,marker192 );
+});
+var info193 = '<div style="width:150px;">grid: 3,3 <br>lat: 38.951328242 <br>lon: -77.08879908 <br>pca: 11842 <br>lmax: 50.1 </div>';
+var point193 = new google.maps.LatLng(38.951328242 ,-77.08879908 );
+var marker193 = new google.maps.Marker({
+position: point193 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker193 , "click", function() {
+infowindow.setContent(info193 );
+infowindow.open(map,marker193 );
+});
+var info194 = '<div style="width:150px;">grid: 3,2 <br>lat: 38.944075495 <br>lon: -77.08879908 <br>pca: 10244 <br>lmax: 54.3 </div>';
+var point194 = new google.maps.LatLng(38.944075495 ,-77.08879908 );
+var marker194 = new google.maps.Marker({
+position: point194 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker194 , "click", function() {
+infowindow.setContent(info194 );
+infowindow.open(map,marker194 );
+});
+var info195 = '<div style="width:150px;">grid: 3,1 <br>lat: 38.936822747 <br>lon: -77.08879908 <br>pca: 8583 <br>lmax: 58.3 </div>';
+var point195 = new google.maps.LatLng(38.936822747 ,-77.08879908 );
+var marker195 = new google.maps.Marker({
+position: point195 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker195 , "click", function() {
+infowindow.setContent(info195 );
+infowindow.open(map,marker195 );
+});
+var info196 = '<div style="width:150px;">grid: 3,0 <br>lat: 38.92957 <br>lon: -77.08879908 <br>pca: 7023 <br>lmax: 62.3 </div>';
+var point196 = new google.maps.LatLng(38.92957 ,-77.08879908 );
+var marker196 = new google.maps.Marker({
+position: point196 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker196 , "click", function() {
+infowindow.setContent(info196 );
+infowindow.open(map,marker196 );
+});
+var info197 = '<div style="width:150px;">grid: 3,-1 <br>lat: 38.922317253 <br>lon: -77.08879908 <br>pca: 5625 <br>lmax: 65.9 </div>';
+var point197 = new google.maps.LatLng(38.922317253 ,-77.08879908 );
+var marker197 = new google.maps.Marker({
+position: point197 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker197 , "click", function() {
+infowindow.setContent(info197 );
+infowindow.open(map,marker197 );
+});
+var info198 = '<div style="width:150px;">grid: 3,-2 <br>lat: 38.915064505 <br>lon: -77.08879908 <br>pca: 4435 <br>lmax: 68.9 </div>';
+var point198 = new google.maps.LatLng(38.915064505 ,-77.08879908 );
+var marker198 = new google.maps.Marker({
+position: point198 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker198 , "click", function() {
+infowindow.setContent(info198 );
+infowindow.open(map,marker198 );
+});
+var info199 = '<div style="width:150px;">grid: 3,-3 <br>lat: 38.907811758 <br>lon: -77.08879908 <br>pca: 3656 <br>lmax: 70.7 </div>';
+var point199 = new google.maps.LatLng(38.907811758 ,-77.08879908 );
+var marker199 = new google.maps.Marker({
+position: point199 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker199 , "click", function() {
+infowindow.setContent(info199 );
+infowindow.open(map,marker199 );
+});
+var info200 = '<div style="width:150px;">grid: 3,-4 <br>lat: 38.900559011 <br>lon: -77.08879908 <br>pca: 3463 <br>lmax: 71.3 </div>';
+var point200 = new google.maps.LatLng(38.900559011 ,-77.08879908 );
+var marker200 = new google.maps.Marker({
+position: point200 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker200 , "click", function() {
+infowindow.setContent(info200 );
+infowindow.open(map,marker200 );
+});
+var info201 = '<div style="width:150px;">grid: 3,-5 <br>lat: 38.893306264 <br>lon: -77.08879908 <br>pca: 4248 <br>lmax: 69.2 </div>';
+var point201 = new google.maps.LatLng(38.893306264 ,-77.08879908 );
+var marker201 = new google.maps.Marker({
+position: point201 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker201 , "click", function() {
+infowindow.setContent(info201 );
+infowindow.open(map,marker201 );
+});
+var info202 = '<div style="width:150px;">grid: 3,-6 <br>lat: 38.886053516 <br>lon: -77.08879908 <br>pca: 5551 <br>lmax: 66.2 </div>';
+var point202 = new google.maps.LatLng(38.886053516 ,-77.08879908 );
+var marker202 = new google.maps.Marker({
+position: point202 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker202 , "click", function() {
+infowindow.setContent(info202 );
+infowindow.open(map,marker202 );
+});
+var info203 = '<div style="width:150px;">grid: 3,-7 <br>lat: 38.878800769 <br>lon: -77.08879908 <br>pca: 7192 <br>lmax: 62 </div>';
+var point203 = new google.maps.LatLng(38.878800769 ,-77.08879908 );
+var marker203 = new google.maps.Marker({
+position: point203 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker203 , "click", function() {
+infowindow.setContent(info203 );
+infowindow.open(map,marker203 );
+});
+var info204 = '<div style="width:150px;">grid: 3,-8 <br>lat: 38.871548022 <br>lon: -77.08879908 <br>pca: 9107 <br>lmax: 57 </div>';
+var point204 = new google.maps.LatLng(38.871548022 ,-77.08879908 );
+var marker204 = new google.maps.Marker({
+position: point204 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker204 , "click", function() {
+infowindow.setContent(info204 );
+infowindow.open(map,marker204 );
+});
+var info205 = '<div style="width:150px;">grid: 4,8 <br>lat: 38.987591978 <br>lon: -77.07963878 <br>pca: 22301 <br>lmax: . </div>';
+var point205 = new google.maps.LatLng(38.987591978 ,-77.07963878 );
+var marker205 = new google.maps.Marker({
+position: point205 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker205 , "click", function() {
+infowindow.setContent(info205 );
+infowindow.open(map,marker205 );
+});
+var info206 = '<div style="width:150px;">grid: 4,7 <br>lat: 38.980339231 <br>lon: -77.07963878 <br>pca: 20515 <br>lmax: . </div>';
+var point206 = new google.maps.LatLng(38.980339231 ,-77.07963878 );
+var marker206 = new google.maps.Marker({
+position: point206 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker206 , "click", function() {
+infowindow.setContent(info206 );
+infowindow.open(map,marker206 );
+});
+var info207 = '<div style="width:150px;">grid: 4,6 <br>lat: 38.973086484 <br>lon: -77.07963878 <br>pca: 18750 <br>lmax: . </div>';
+var point207 = new google.maps.LatLng(38.973086484 ,-77.07963878 );
+var marker207 = new google.maps.Marker({
+position: point207 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker207 , "click", function() {
+infowindow.setContent(info207 );
+infowindow.open(map,marker207 );
+});
+var info208 = '<div style="width:150px;">grid: 4,5 <br>lat: 38.965833736 <br>lon: -77.07963878 <br>pca: 16988 <br>lmax: . </div>';
+var point208 = new google.maps.LatLng(38.965833736 ,-77.07963878 );
+var marker208 = new google.maps.Marker({
+position: point208 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker208 , "click", function() {
+infowindow.setContent(info208 );
+infowindow.open(map,marker208 );
+});
+var info209 = '<div style="width:150px;">grid: 4,4 <br>lat: 38.958580989 <br>lon: -77.07963878 <br>pca: 15264 <br>lmax: . </div>';
+var point209 = new google.maps.LatLng(38.958580989 ,-77.07963878 );
+var marker209 = new google.maps.Marker({
+position: point209 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker209 , "click", function() {
+infowindow.setContent(info209 );
+infowindow.open(map,marker209 );
+});
+var info210 = '<div style="width:150px;">grid: 4,3 <br>lat: 38.951328242 <br>lon: -77.07963878 <br>pca: 13576 <br>lmax: 45.9 </div>';
+var point210 = new google.maps.LatLng(38.951328242 ,-77.07963878 );
+var marker210 = new google.maps.Marker({
+position: point210 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker210 , "click", function() {
+infowindow.setContent(info210 );
+infowindow.open(map,marker210 );
+});
+var info211 = '<div style="width:150px;">grid: 4,2 <br>lat: 38.944075495 <br>lon: -77.07963878 <br>pca: 11882 <br>lmax: 50.2 </div>';
+var point211 = new google.maps.LatLng(38.944075495 ,-77.07963878 );
+var marker211 = new google.maps.Marker({
+position: point211 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker211 , "click", function() {
+infowindow.setContent(info211 );
+infowindow.open(map,marker211 );
+});
+var info212 = '<div style="width:150px;">grid: 4,1 <br>lat: 38.936822747 <br>lon: -77.07963878 <br>pca: 10184 <br>lmax: 54.2 </div>';
+var point212 = new google.maps.LatLng(38.936822747 ,-77.07963878 );
+var marker212 = new google.maps.Marker({
+position: point212 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker212 , "click", function() {
+infowindow.setContent(info212 );
+infowindow.open(map,marker212 );
+});
+var info213 = '<div style="width:150px;">grid: 4,0 <br>lat: 38.92957 <br>lon: -77.07963878 <br>pca: 8554 <br>lmax: 58.4 </div>';
+var point213 = new google.maps.LatLng(38.92957 ,-77.07963878 );
+var marker213 = new google.maps.Marker({
+position: point213 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker213 , "click", function() {
+infowindow.setContent(info213 );
+infowindow.open(map,marker213 );
+});
+var info214 = '<div style="width:150px;">grid: 4,-1 <br>lat: 38.922317253 <br>lon: -77.07963878 <br>pca: 6985 <br>lmax: 62.4 </div>';
+var point214 = new google.maps.LatLng(38.922317253 ,-77.07963878 );
+var marker214 = new google.maps.Marker({
+position: point214 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker214 , "click", function() {
+infowindow.setContent(info214 );
+infowindow.open(map,marker214 );
+});
+var info215 = '<div style="width:150px;">grid: 4,-2 <br>lat: 38.915064505 <br>lon: -77.07963878 <br>pca: 5529 <br>lmax: 66.1 </div>';
+var point215 = new google.maps.LatLng(38.915064505 ,-77.07963878 );
+var marker215 = new google.maps.Marker({
+position: point215 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker215 , "click", function() {
+infowindow.setContent(info215 );
+infowindow.open(map,marker215 );
+});
+var info216 = '<div style="width:150px;">grid: 4,-3 <br>lat: 38.907811758 <br>lon: -77.07963878 <br>pca: 4111 <br>lmax: 69.7 </div>';
+var point216 = new google.maps.LatLng(38.907811758 ,-77.07963878 );
+var marker216 = new google.maps.Marker({
+position: point216 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker216 , "click", function() {
+infowindow.setContent(info216 );
+infowindow.open(map,marker216 );
+});
+var info217 = '<div style="width:150px;">grid: 4,-4 <br>lat: 38.900559011 <br>lon: -77.07963878 <br>pca: 3119 <br>lmax: 72 </div>';
+var point217 = new google.maps.LatLng(38.900559011 ,-77.07963878 );
+var marker217 = new google.maps.Marker({
+position: point217 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker217 , "click", function() {
+infowindow.setContent(info217 );
+infowindow.open(map,marker217 );
+});
+var info218 = '<div style="width:150px;">grid: 4,-5 <br>lat: 38.893306264 <br>lon: -77.07963878 <br>pca: 2930 <br>lmax: 72.5 </div>';
+var point218 = new google.maps.LatLng(38.893306264 ,-77.07963878 );
+var marker218 = new google.maps.Marker({
+position: point218 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker218 , "click", function() {
+infowindow.setContent(info218 );
+infowindow.open(map,marker218 );
+});
+var info219 = '<div style="width:150px;">grid: 4,-6 <br>lat: 38.886053516 <br>lon: -77.07963878 <br>pca: 3932 <br>lmax: 70.2 </div>';
+var point219 = new google.maps.LatLng(38.886053516 ,-77.07963878 );
+var marker219 = new google.maps.Marker({
+position: point219 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker219 , "click", function() {
+infowindow.setContent(info219 );
+infowindow.open(map,marker219 );
+});
+var info220 = '<div style="width:150px;">grid: 4,-7 <br>lat: 38.878800769 <br>lon: -77.07963878 <br>pca: 5605 <br>lmax: 65.9 </div>';
+var point220 = new google.maps.LatLng(38.878800769 ,-77.07963878 );
+var marker220 = new google.maps.Marker({
+position: point220 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker220 , "click", function() {
+infowindow.setContent(info220 );
+infowindow.open(map,marker220 );
+});
+var info221 = '<div style="width:150px;">grid: 4,-8 <br>lat: 38.871548022 <br>lon: -77.07963878 <br>pca: 7433 <br>lmax: 61.3 </div>';
+var point221 = new google.maps.LatLng(38.871548022 ,-77.07963878 );
+var marker221 = new google.maps.Marker({
+position: point221 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker221 , "click", function() {
+infowindow.setContent(info221 );
+infowindow.open(map,marker221 );
+});
+var info222 = '<div style="width:150px;">grid: 5,8 <br>lat: 38.987591978 <br>lon: -77.07047847 <br>pca: 24103 <br>lmax: . </div>';
+var point222 = new google.maps.LatLng(38.987591978 ,-77.07047847 );
+var marker222 = new google.maps.Marker({
+position: point222 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker222 , "click", function() {
+infowindow.setContent(info222 );
+infowindow.open(map,marker222 );
+});
+var info223 = '<div style="width:150px;">grid: 5,7 <br>lat: 38.980339231 <br>lon: -77.07047847 <br>pca: 22327 <br>lmax: . </div>';
+var point223 = new google.maps.LatLng(38.980339231 ,-77.07047847 );
+var marker223 = new google.maps.Marker({
+position: point223 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker223 , "click", function() {
+infowindow.setContent(info223 );
+infowindow.open(map,marker223 );
+});
+var info224 = '<div style="width:150px;">grid: 5,6 <br>lat: 38.973086484 <br>lon: -77.07047847 <br>pca: 20544 <br>lmax: . </div>';
+var point224 = new google.maps.LatLng(38.973086484 ,-77.07047847 );
+var marker224 = new google.maps.Marker({
+position: point224 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker224 , "click", function() {
+infowindow.setContent(info224 );
+infowindow.open(map,marker224 );
+});
+var info225 = '<div style="width:150px;">grid: 5,5 <br>lat: 38.965833736 <br>lon: -77.07047847 <br>pca: 18792 <br>lmax: . </div>';
+var point225 = new google.maps.LatLng(38.965833736 ,-77.07047847 );
+var marker225 = new google.maps.Marker({
+position: point225 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker225 , "click", function() {
+infowindow.setContent(info225 );
+infowindow.open(map,marker225 );
+});
+var info226 = '<div style="width:150px;">grid: 5,4 <br>lat: 38.958580989 <br>lon: -77.07047847 <br>pca: 17065 <br>lmax: . </div>';
+var point226 = new google.maps.LatLng(38.958580989 ,-77.07047847 );
+var marker226 = new google.maps.Marker({
+position: point226 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker226 , "click", function() {
+infowindow.setContent(info226 );
+infowindow.open(map,marker226 );
+});
+var info227 = '<div style="width:150px;">grid: 5,3 <br>lat: 38.951328242 <br>lon: -77.07047847 <br>pca: 15370 <br>lmax: . </div>';
+var point227 = new google.maps.LatLng(38.951328242 ,-77.07047847 );
+var marker227 = new google.maps.Marker({
+position: point227 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker227 , "click", function() {
+infowindow.setContent(info227 );
+infowindow.open(map,marker227 );
+});
+var info228 = '<div style="width:150px;">grid: 5,2 <br>lat: 38.944075495 <br>lon: -77.07047847 <br>pca: 13625 <br>lmax: 45.7 </div>';
+var point228 = new google.maps.LatLng(38.944075495 ,-77.07047847 );
+var marker228 = new google.maps.Marker({
+position: point228 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker228 , "click", function() {
+infowindow.setContent(info228 );
+infowindow.open(map,marker228 );
+});
+var info229 = '<div style="width:150px;">grid: 5,1 <br>lat: 38.936822747 <br>lon: -77.07047847 <br>pca: 11926 <br>lmax: 50.2 </div>';
+var point229 = new google.maps.LatLng(38.936822747 ,-77.07047847 );
+var marker229 = new google.maps.Marker({
+position: point229 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker229 , "click", function() {
+infowindow.setContent(info229 );
+infowindow.open(map,marker229 );
+});
+var info230 = '<div style="width:150px;">grid: 5,0 <br>lat: 38.92957 <br>lon: -77.07047847 <br>pca: 10269 <br>lmax: 54.3 </div>';
+var point230 = new google.maps.LatLng(38.92957 ,-77.07047847 );
+var marker230 = new google.maps.Marker({
+position: point230 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker230 , "click", function() {
+infowindow.setContent(info230 );
+infowindow.open(map,marker230 );
+});
+var info231 = '<div style="width:150px;">grid: 5,-1 <br>lat: 38.922317253 <br>lon: -77.07047847 <br>pca: 8662 <br>lmax: 58.1 </div>';
+var point231 = new google.maps.LatLng(38.922317253 ,-77.07047847 );
+var marker231 = new google.maps.Marker({
+position: point231 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker231 , "click", function() {
+infowindow.setContent(info231 );
+infowindow.open(map,marker231 );
+});
+var info232 = '<div style="width:150px;">grid: 5,-2 <br>lat: 38.915064505 <br>lon: -77.07047847 <br>pca: 7009 <br>lmax: 62.4 </div>';
+var point232 = new google.maps.LatLng(38.915064505 ,-77.07047847 );
+var marker232 = new google.maps.Marker({
+position: point232 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker232 , "click", function() {
+infowindow.setContent(info232 );
+infowindow.open(map,marker232 );
+});
+var info233 = '<div style="width:150px;">grid: 5,-3 <br>lat: 38.907811758 <br>lon: -77.07047847 <br>pca: 5381 <br>lmax: 66.3 </div>';
+var point233 = new google.maps.LatLng(38.907811758 ,-77.07047847 );
+var marker233 = new google.maps.Marker({
+position: point233 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker233 , "click", function() {
+infowindow.setContent(info233 );
+infowindow.open(map,marker233 );
+});
+var info234 = '<div style="width:150px;">grid: 5,-4 <br>lat: 38.900559011 <br>lon: -77.07047847 <br>pca: 3730 <br>lmax: 70.7 </div>';
+var point234 = new google.maps.LatLng(38.900559011 ,-77.07047847 );
+var marker234 = new google.maps.Marker({
+position: point234 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker234 , "click", function() {
+infowindow.setContent(info234 );
+infowindow.open(map,marker234 );
+});
+var info235 = '<div style="width:150px;">grid: 5,-5 <br>lat: 38.893306264 <br>lon: -77.07047847 <br>pca: 2600 <br>lmax: 73.3 </div>';
+var point235 = new google.maps.LatLng(38.893306264 ,-77.07047847 );
+var marker235 = new google.maps.Marker({
+position: point235 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker235 , "click", function() {
+infowindow.setContent(info235 );
+infowindow.open(map,marker235 );
+});
+var info236 = '<div style="width:150px;">grid: 5,-6 <br>lat: 38.886053516 <br>lon: -77.07047847 <br>pca: 2730 <br>lmax: 73.1 </div>';
+var point236 = new google.maps.LatLng(38.886053516 ,-77.07047847 );
+var marker236 = new google.maps.Marker({
+position: point236 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker236 , "click", function() {
+infowindow.setContent(info236 );
+infowindow.open(map,marker236 );
+});
+var info237 = '<div style="width:150px;">grid: 5,-7 <br>lat: 38.878800769 <br>lon: -77.07047847 <br>pca: 4093 <br>lmax: 69.8 </div>';
+var point237 = new google.maps.LatLng(38.878800769 ,-77.07047847 );
+var marker237 = new google.maps.Marker({
+position: point237 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker237 , "click", function() {
+infowindow.setContent(info237 );
+infowindow.open(map,marker237 );
+});
+var info238 = '<div style="width:150px;">grid: 5,-8 <br>lat: 38.871548022 <br>lon: -77.07047847 <br>pca: 5876 <br>lmax: 65.2 </div>';
+var point238 = new google.maps.LatLng(38.871548022 ,-77.07047847 );
+var marker238 = new google.maps.Marker({
+position: point238 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker238 , "click", function() {
+infowindow.setContent(info238 );
+infowindow.open(map,marker238 );
+});
+var info239 = '<div style="width:150px;">grid: 6,8 <br>lat: 38.987591978 <br>lon: -77.06131817 <br>pca: 25940 <br>lmax: . </div>';
+var point239 = new google.maps.LatLng(38.987591978 ,-77.06131817 );
+var marker239 = new google.maps.Marker({
+position: point239 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker239 , "click", function() {
+infowindow.setContent(info239 );
+infowindow.open(map,marker239 );
+});
+var info240 = '<div style="width:150px;">grid: 6,7 <br>lat: 38.980339231 <br>lon: -77.06131817 <br>pca: 24146 <br>lmax: . </div>';
+var point240 = new google.maps.LatLng(38.980339231 ,-77.06131817 );
+var marker240 = new google.maps.Marker({
+position: point240 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker240 , "click", function() {
+infowindow.setContent(info240 );
+infowindow.open(map,marker240 );
+});
+var info241 = '<div style="width:150px;">grid: 6,6 <br>lat: 38.973086484 <br>lon: -77.06131817 <br>pca: 22378 <br>lmax: . </div>';
+var point241 = new google.maps.LatLng(38.973086484 ,-77.06131817 );
+var marker241 = new google.maps.Marker({
+position: point241 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker241 , "click", function() {
+infowindow.setContent(info241 );
+infowindow.open(map,marker241 );
+});
+var info242 = '<div style="width:150px;">grid: 6,5 <br>lat: 38.965833736 <br>lon: -77.06131817 <br>pca: 20631 <br>lmax: . </div>';
+var point242 = new google.maps.LatLng(38.965833736 ,-77.06131817 );
+var marker242 = new google.maps.Marker({
+position: point242 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker242 , "click", function() {
+infowindow.setContent(info242 );
+infowindow.open(map,marker242 );
+});
+var info243 = '<div style="width:150px;">grid: 6,4 <br>lat: 38.958580989 <br>lon: -77.06131817 <br>pca: 18942 <br>lmax: . </div>';
+var point243 = new google.maps.LatLng(38.958580989 ,-77.06131817 );
+var marker243 = new google.maps.Marker({
+position: point243 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker243 , "click", function() {
+infowindow.setContent(info243 );
+infowindow.open(map,marker243 );
+});
+var info244 = '<div style="width:150px;">grid: 6,3 <br>lat: 38.951328242 <br>lon: -77.06131817 <br>pca: 17179 <br>lmax: . </div>';
+var point244 = new google.maps.LatLng(38.951328242 ,-77.06131817 );
+var marker244 = new google.maps.Marker({
+position: point244 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker244 , "click", function() {
+infowindow.setContent(info244 );
+infowindow.open(map,marker244 );
+});
+var info245 = '<div style="width:150px;">grid: 6,2 <br>lat: 38.944075495 <br>lon: -77.06131817 <br>pca: 15454 <br>lmax: . </div>';
+var point245 = new google.maps.LatLng(38.944075495 ,-77.06131817 );
+var marker245 = new google.maps.Marker({
+position: point245 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker245 , "click", function() {
+infowindow.setContent(info245 );
+infowindow.open(map,marker245 );
+});
+var info246 = '<div style="width:150px;">grid: 6,1 <br>lat: 38.936822747 <br>lon: -77.06131817 <br>pca: 13772 <br>lmax: 45.4 </div>';
+var point246 = new google.maps.LatLng(38.936822747 ,-77.06131817 );
+var marker246 = new google.maps.Marker({
+position: point246 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker246 , "click", function() {
+infowindow.setContent(info246 );
+infowindow.open(map,marker246 );
+});
+var info247 = '<div style="width:150px;">grid: 6,0 <br>lat: 38.92957 <br>lon: -77.06131817 <br>pca: 12113 <br>lmax: 49.4 </div>';
+var point247 = new google.maps.LatLng(38.92957 ,-77.06131817 );
+var marker247 = new google.maps.Marker({
+position: point247 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker247 , "click", function() {
+infowindow.setContent(info247 );
+infowindow.open(map,marker247 );
+});
+var info248 = '<div style="width:150px;">grid: 6,-1 <br>lat: 38.922317253 <br>lon: -77.06131817 <br>pca: 10366 <br>lmax: 53.8 </div>';
+var point248 = new google.maps.LatLng(38.922317253 ,-77.06131817 );
+var marker248 = new google.maps.Marker({
+position: point248 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker248 , "click", function() {
+infowindow.setContent(info248 );
+infowindow.open(map,marker248 );
+});
+var info249 = '<div style="width:150px;">grid: 6,-2 <br>lat: 38.915064505 <br>lon: -77.06131817 <br>pca: 8702 <br>lmax: 58 </div>';
+var point249 = new google.maps.LatLng(38.915064505 ,-77.06131817 );
+var marker249 = new google.maps.Marker({
+position: point249 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker249 , "click", function() {
+infowindow.setContent(info249 );
+infowindow.open(map,marker249 );
+});
+var info250 = '<div style="width:150px;">grid: 6,-3 <br>lat: 38.907811758 <br>lon: -77.06131817 <br>pca: 6840 <br>lmax: 62.8 </div>';
+var point250 = new google.maps.LatLng(38.907811758 ,-77.06131817 );
+var marker250 = new google.maps.Marker({
+position: point250 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker250 , "click", function() {
+infowindow.setContent(info250 );
+infowindow.open(map,marker250 );
+});
+var info251 = '<div style="width:150px;">grid: 6,-4 <br>lat: 38.900559011 <br>lon: -77.06131817 <br>pca: 4984 <br>lmax: 67.4 </div>';
+var point251 = new google.maps.LatLng(38.900559011 ,-77.06131817 );
+var marker251 = new google.maps.Marker({
+position: point251 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker251 , "click", function() {
+infowindow.setContent(info251 );
+infowindow.open(map,marker251 );
+});
+var info252 = '<div style="width:150px;">grid: 6,-5 <br>lat: 38.893306264 <br>lon: -77.06131817 <br>pca: 3293 <br>lmax: 71.7 </div>';
+var point252 = new google.maps.LatLng(38.893306264 ,-77.06131817 );
+var marker252 = new google.maps.Marker({
+position: point252 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker252 , "click", function() {
+infowindow.setContent(info252 );
+infowindow.open(map,marker252 );
+});
+var info253 = '<div style="width:150px;">grid: 6,-6 <br>lat: 38.886053516 <br>lon: -77.06131817 <br>pca: 2178 <br>lmax: 74.5 </div>';
+var point253 = new google.maps.LatLng(38.886053516 ,-77.06131817 );
+var marker253 = new google.maps.Marker({
+position: point253 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker253 , "click", function() {
+infowindow.setContent(info253 );
+infowindow.open(map,marker253 );
+});
+var info254 = '<div style="width:150px;">grid: 6,-7 <br>lat: 38.878800769 <br>lon: -77.06131817 <br>pca: 2699 <br>lmax: 73.2 </div>';
+var point254 = new google.maps.LatLng(38.878800769 ,-77.06131817 );
+var marker254 = new google.maps.Marker({
+position: point254 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker254 , "click", function() {
+infowindow.setContent(info254 );
+infowindow.open(map,marker254 );
+});
+var info255 = '<div style="width:150px;">grid: 6,-8 <br>lat: 38.871548022 <br>lon: -77.06131817 <br>pca: 4183 <br>lmax: 69.5 </div>';
+var point255 = new google.maps.LatLng(38.871548022 ,-77.06131817 );
+var marker255 = new google.maps.Marker({
+position: point255 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker255 , "click", function() {
+infowindow.setContent(info255 );
+infowindow.open(map,marker255 );
+});
+var info256 = '<div style="width:150px;">grid: 7,8 <br>lat: 38.987591978 <br>lon: -77.05215786 <br>pca: 27638 <br>lmax: . </div>';
+var point256 = new google.maps.LatLng(38.987591978 ,-77.05215786 );
+var marker256 = new google.maps.Marker({
+position: point256 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker256 , "click", function() {
+infowindow.setContent(info256 );
+infowindow.open(map,marker256 );
+});
+var info257 = '<div style="width:150px;">grid: 7,7 <br>lat: 38.980339231 <br>lon: -77.05215786 <br>pca: 25999 <br>lmax: . </div>';
+var point257 = new google.maps.LatLng(38.980339231 ,-77.05215786 );
+var marker257 = new google.maps.Marker({
+position: point257 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker257 , "click", function() {
+infowindow.setContent(info257 );
+infowindow.open(map,marker257 );
+});
+var info258 = '<div style="width:150px;">grid: 7,6 <br>lat: 38.973086484 <br>lon: -77.05215786 <br>pca: 24240 <br>lmax: . </div>';
+var point258 = new google.maps.LatLng(38.973086484 ,-77.05215786 );
+var marker258 = new google.maps.Marker({
+position: point258 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker258 , "click", function() {
+infowindow.setContent(info258 );
+infowindow.open(map,marker258 );
+});
+var info259 = '<div style="width:150px;">grid: 7,5 <br>lat: 38.965833736 <br>lon: -77.05215786 <br>pca: 22558 <br>lmax: . </div>';
+var point259 = new google.maps.LatLng(38.965833736 ,-77.05215786 );
+var marker259 = new google.maps.Marker({
+position: point259 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker259 , "click", function() {
+infowindow.setContent(info259 );
+infowindow.open(map,marker259 );
+});
+var info260 = '<div style="width:150px;">grid: 7,4 <br>lat: 38.958580989 <br>lon: -77.05215786 <br>pca: 20781 <br>lmax: . </div>';
+var point260 = new google.maps.LatLng(38.958580989 ,-77.05215786 );
+var marker260 = new google.maps.Marker({
+position: point260 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker260 , "click", function() {
+infowindow.setContent(info260 );
+infowindow.open(map,marker260 );
+});
+var info261 = '<div style="width:150px;">grid: 7,3 <br>lat: 38.951328242 <br>lon: -77.05215786 <br>pca: 19040 <br>lmax: . </div>';
+var point261 = new google.maps.LatLng(38.951328242 ,-77.05215786 );
+var marker261 = new google.maps.Marker({
+position: point261 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker261 , "click", function() {
+infowindow.setContent(info261 );
+infowindow.open(map,marker261 );
+});
+var info262 = '<div style="width:150px;">grid: 7,2 <br>lat: 38.944075495 <br>lon: -77.05215786 <br>pca: 17336 <br>lmax: . </div>';
+var point262 = new google.maps.LatLng(38.944075495 ,-77.05215786 );
+var marker262 = new google.maps.Marker({
+position: point262 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker262 , "click", function() {
+infowindow.setContent(info262 );
+infowindow.open(map,marker262 );
+});
+var info263 = '<div style="width:150px;">grid: 7,1 <br>lat: 38.936822747 <br>lon: -77.05215786 <br>pca: 15683 <br>lmax: . </div>';
+var point263 = new google.maps.LatLng(38.936822747 ,-77.05215786 );
+var marker263 = new google.maps.Marker({
+position: point263 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker263 , "click", function() {
+infowindow.setContent(info263 );
+infowindow.open(map,marker263 );
+});
+var info264 = '<div style="width:150px;">grid: 7,0 <br>lat: 38.92957 <br>lon: -77.05215786 <br>pca: 13905 <br>lmax: 44.9 </div>';
+var point264 = new google.maps.LatLng(38.92957 ,-77.05215786 );
+var marker264 = new google.maps.Marker({
+position: point264 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker264 , "click", function() {
+infowindow.setContent(info264 );
+infowindow.open(map,marker264 );
+});
+var info265 = '<div style="width:150px;">grid: 7,-1 <br>lat: 38.922317253 <br>lon: -77.05215786 <br>pca: 12249 <br>lmax: 49.2 </div>';
+var point265 = new google.maps.LatLng(38.922317253 ,-77.05215786 );
+var marker265 = new google.maps.Marker({
+position: point265 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker265 , "click", function() {
+infowindow.setContent(info265 );
+infowindow.open(map,marker265 );
+});
+var info266 = '<div style="width:150px;">grid: 7,-2 <br>lat: 38.915064505 <br>lon: -77.05215786 <br>pca: 10354 <br>lmax: 53.9 </div>';
+var point266 = new google.maps.LatLng(38.915064505 ,-77.05215786 );
+var marker266 = new google.maps.Marker({
+position: point266 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker266 , "click", function() {
+infowindow.setContent(info266 );
+infowindow.open(map,marker266 );
+});
+var info267 = '<div style="width:150px;">grid: 7,-3 <br>lat: 38.907811758 <br>lon: -77.05215786 <br>pca: 8363 <br>lmax: 59.1 </div>';
+var point267 = new google.maps.LatLng(38.907811758 ,-77.05215786 );
+var marker267 = new google.maps.Marker({
+position: point267 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker267 , "click", function() {
+infowindow.setContent(info267 );
+infowindow.open(map,marker267 );
+});
+var info268 = '<div style="width:150px;">grid: 7,-4 <br>lat: 38.900559011 <br>lon: -77.05215786 <br>pca: 6435 <br>lmax: 63.8 </div>';
+var point268 = new google.maps.LatLng(38.900559011 ,-77.05215786 );
+var marker268 = new google.maps.Marker({
+position: point268 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/red-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker268 , "click", function() {
+infowindow.setContent(info268 );
+infowindow.open(map,marker268 );
+});
+var info269 = '<div style="width:150px;">grid: 7,-5 <br>lat: 38.893306264 <br>lon: -77.05215786 <br>pca: 4486 <br>lmax: 68.5 </div>';
+var point269 = new google.maps.LatLng(38.893306264 ,-77.05215786 );
+var marker269 = new google.maps.Marker({
+position: point269 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker269 , "click", function() {
+infowindow.setContent(info269 );
+infowindow.open(map,marker269 );
+});
+var info270 = '<div style="width:150px;">grid: 7,-6 <br>lat: 38.886053516 <br>lon: -77.05215786 <br>pca: 2758 <br>lmax: 72.9 </div>';
+var point270 = new google.maps.LatLng(38.886053516 ,-77.05215786 );
+var marker270 = new google.maps.Marker({
+position: point270 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker270 , "click", function() {
+infowindow.setContent(info270 );
+infowindow.open(map,marker270 );
+});
+var info271 = '<div style="width:150px;">grid: 7,-7 <br>lat: 38.878800769 <br>lon: -77.05215786 <br>pca: 1723 <br>lmax: 75.7 </div>';
+var point271 = new google.maps.LatLng(38.878800769 ,-77.05215786 );
+var marker271 = new google.maps.Marker({
+position: point271 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker271 , "click", function() {
+infowindow.setContent(info271 );
+infowindow.open(map,marker271 );
+});
+var info272 = '<div style="width:150px;">grid: 7,-8 <br>lat: 38.871548022 <br>lon: -77.05215786 <br>pca: 2499 <br>lmax: 73.9 </div>';
+var point272 = new google.maps.LatLng(38.871548022 ,-77.05215786 );
+var marker272 = new google.maps.Marker({
+position: point272 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker272 , "click", function() {
+infowindow.setContent(info272 );
+infowindow.open(map,marker272 );
+});
+var info273 = '<div style="width:150px;">grid: 8,8 <br>lat: 38.987591978 <br>lon: -77.04299756 <br>pca: 27968 <br>lmax: . </div>';
+var point273 = new google.maps.LatLng(38.987591978 ,-77.04299756 );
+var marker273 = new google.maps.Marker({
+position: point273 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker273 , "click", function() {
+infowindow.setContent(info273 );
+infowindow.open(map,marker273 );
+});
+var info274 = '<div style="width:150px;">grid: 8,7 <br>lat: 38.980339231 <br>lon: -77.04299756 <br>pca: 27875 <br>lmax: . </div>';
+var point274 = new google.maps.LatLng(38.980339231 ,-77.04299756 );
+var marker274 = new google.maps.Marker({
+position: point274 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker274 , "click", function() {
+infowindow.setContent(info274 );
+infowindow.open(map,marker274 );
+});
+var info275 = '<div style="width:150px;">grid: 8,6 <br>lat: 38.973086484 <br>lon: -77.04299756 <br>pca: 26190 <br>lmax: . </div>';
+var point275 = new google.maps.LatLng(38.973086484 ,-77.04299756 );
+var marker275 = new google.maps.Marker({
+position: point275 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker275 , "click", function() {
+infowindow.setContent(info275 );
+infowindow.open(map,marker275 );
+});
+var info276 = '<div style="width:150px;">grid: 8,5 <br>lat: 38.965833736 <br>lon: -77.04299756 <br>pca: 24403 <br>lmax: . </div>';
+var point276 = new google.maps.LatLng(38.965833736 ,-77.04299756 );
+var marker276 = new google.maps.Marker({
+position: point276 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker276 , "click", function() {
+infowindow.setContent(info276 );
+infowindow.open(map,marker276 );
+});
+var info277 = '<div style="width:150px;">grid: 8,4 <br>lat: 38.958580989 <br>lon: -77.04299756 <br>pca: 22651 <br>lmax: . </div>';
+var point277 = new google.maps.LatLng(38.958580989 ,-77.04299756 );
+var marker277 = new google.maps.Marker({
+position: point277 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker277 , "click", function() {
+infowindow.setContent(info277 );
+infowindow.open(map,marker277 );
+});
+var info278 = '<div style="width:150px;">grid: 8,3 <br>lat: 38.951328242 <br>lon: -77.04299756 <br>pca: 20934 <br>lmax: . </div>';
+var point278 = new google.maps.LatLng(38.951328242 ,-77.04299756 );
+var marker278 = new google.maps.Marker({
+position: point278 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker278 , "click", function() {
+infowindow.setContent(info278 );
+infowindow.open(map,marker278 );
+});
+var info279 = '<div style="width:150px;">grid: 8,2 <br>lat: 38.944075495 <br>lon: -77.04299756 <br>pca: 19279 <br>lmax: . </div>';
+var point279 = new google.maps.LatLng(38.944075495 ,-77.04299756 );
+var marker279 = new google.maps.Marker({
+position: point279 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker279 , "click", function() {
+infowindow.setContent(info279 );
+infowindow.open(map,marker279 );
+});
+var info280 = '<div style="width:150px;">grid: 8,1 <br>lat: 38.936822747 <br>lon: -77.04299756 <br>pca: 17514 <br>lmax: . </div>';
+var point280 = new google.maps.LatLng(38.936822747 ,-77.04299756 );
+var marker280 = new google.maps.Marker({
+position: point280 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker280 , "click", function() {
+infowindow.setContent(info280 );
+infowindow.open(map,marker280 );
+});
+var info281 = '<div style="width:150px;">grid: 8,0 <br>lat: 38.92957 <br>lon: -77.04299756 <br>pca: 15860 <br>lmax: . </div>';
+var point281 = new google.maps.LatLng(38.92957 ,-77.04299756 );
+var marker281 = new google.maps.Marker({
+position: point281 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker281 , "click", function() {
+infowindow.setContent(info281 );
+infowindow.open(map,marker281 );
+});
+var info282 = '<div style="width:150px;">grid: 8,-1 <br>lat: 38.922317253 <br>lon: -77.04299756 <br>pca: 13970 <br>lmax: 44.8 </div>';
+var point282 = new google.maps.LatLng(38.922317253 ,-77.04299756 );
+var marker282 = new google.maps.Marker({
+position: point282 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker282 , "click", function() {
+infowindow.setContent(info282 );
+infowindow.open(map,marker282 );
+});
+var info283 = '<div style="width:150px;">grid: 8,-2 <br>lat: 38.915064505 <br>lon: -77.04299756 <br>pca: 11940 <br>lmax: 49.8 </div>';
+var point283 = new google.maps.LatLng(38.915064505 ,-77.04299756 );
+var marker283 = new google.maps.Marker({
+position: point283 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker283 , "click", function() {
+infowindow.setContent(info283 );
+infowindow.open(map,marker283 );
+});
+var info284 = '<div style="width:150px;">grid: 8,-3 <br>lat: 38.907811758 <br>lon: -77.04299756 <br>pca: 9977 <br>lmax: 55 </div>';
+var point284 = new google.maps.LatLng(38.907811758 ,-77.04299756 );
+var marker284 = new google.maps.Marker({
+position: point284 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker284 , "click", function() {
+infowindow.setContent(info284 );
+infowindow.open(map,marker284 );
+});
+var info285 = '<div style="width:150px;">grid: 8,-4 <br>lat: 38.900559011 <br>lon: -77.04299756 <br>pca: 7941 <br>lmax: 59.9 </div>';
+var point285 = new google.maps.LatLng(38.900559011 ,-77.04299756 );
+var marker285 = new google.maps.Marker({
+position: point285 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/orange-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker285 , "click", function() {
+infowindow.setContent(info285 );
+infowindow.open(map,marker285 );
+});
+var info286 = '<div style="width:150px;">grid: 8,-5 <br>lat: 38.893306264 <br>lon: -77.04299756 <br>pca: 5956 <br>lmax: 65.1 </div>';
+var point286 = new google.maps.LatLng(38.893306264 ,-77.04299756 );
+var marker286 = new google.maps.Marker({
+position: point286 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker286 , "click", function() {
+infowindow.setContent(info286 );
+infowindow.open(map,marker286 );
+});
+var info287 = '<div style="width:150px;">grid: 8,-6 <br>lat: 38.886053516 <br>lon: -77.04299756 <br>pca: 3895 <br>lmax: 70.2 </div>';
+var point287 = new google.maps.LatLng(38.886053516 ,-77.04299756 );
+var marker287 = new google.maps.Marker({
+position: point287 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker287 , "click", function() {
+infowindow.setContent(info287 );
+infowindow.open(map,marker287 );
+});
+var info288 = '<div style="width:150px;">grid: 8,-7 <br>lat: 38.878800769 <br>lon: -77.04299756 <br>pca: 2058 <br>lmax: 74.9 </div>';
+var point288 = new google.maps.LatLng(38.878800769 ,-77.04299756 );
+var marker288 = new google.maps.Marker({
+position: point288 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker288 , "click", function() {
+infowindow.setContent(info288 );
+infowindow.open(map,marker288 );
+});
+var info289 = '<div style="width:150px;">grid: 8,-8 <br>lat: 38.871548022 <br>lon: -77.04299756 <br>pca: 1169 <br>lmax: 76.9 </div>';
+var point289 = new google.maps.LatLng(38.871548022 ,-77.04299756 );
+var marker289 = new google.maps.Marker({
+position: point289 ,
+icon: "http://maps.google.com/mapfiles/ms/icons/pink-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker289 , "click", function() {
+infowindow.setContent(info289 );
+infowindow.open(map,marker289 );
+});
+var info290 = '<div style="width:150px;">dt: 31MAR2010:21:31:07 <br>aircraft type: B734 <br>lat: 38.859 <br>lon: -77.03861 <br>alt: 100 </div>';
+var point290 = new google.maps.LatLng(38.859 ,-77.03861 );
+var marker290 = new google.maps.Marker({
+position: point290 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker290 , "click", function() {
+infowindow.setContent(info290 );
+infowindow.open(map,marker290 );
+});
+var info291 = '<div style="width:150px;">dt: 31MAR2010:21:31:12 <br>aircraft type: B734 <br>lat: 38.86283 <br>lon: -77.03905 <br>alt: 300 </div>';
+var point291 = new google.maps.LatLng(38.86283 ,-77.03905 );
+var marker291 = new google.maps.Marker({
+position: point291 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker291 , "click", function() {
+infowindow.setContent(info291 );
+infowindow.open(map,marker291 );
+});
+var info292 = '<div style="width:150px;">dt: 31MAR2010:21:31:16 <br>aircraft type: B734 <br>lat: 38.86611 <br>lon: -77.03979 <br>alt: 500 </div>';
+var point292 = new google.maps.LatLng(38.86611 ,-77.03979 );
+var marker292 = new google.maps.Marker({
+position: point292 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker292 , "click", function() {
+infowindow.setContent(info292 );
+infowindow.open(map,marker292 );
+});
+var info293 = '<div style="width:150px;">dt: 31MAR2010:21:31:21 <br>aircraft type: B734 <br>lat: 38.86947 <br>lon: -77.04121 <br>alt: 800 </div>';
+var point293 = new google.maps.LatLng(38.86947 ,-77.04121 );
+var marker293 = new google.maps.Marker({
+position: point293 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker293 , "click", function() {
+infowindow.setContent(info293 );
+infowindow.open(map,marker293 );
+});
+var info294 = '<div style="width:150px;">dt: 31MAR2010:21:31:26 <br>aircraft type: B734 <br>lat: 38.87252 <br>lon: -77.04364 <br>alt: 1100 </div>';
+var point294 = new google.maps.LatLng(38.87252 ,-77.04364 );
+var marker294 = new google.maps.Marker({
+position: point294 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker294 , "click", function() {
+infowindow.setContent(info294 );
+infowindow.open(map,marker294 );
+});
+var info295 = '<div style="width:150px;">dt: 31MAR2010:21:31:30 <br>aircraft type: B734 <br>lat: 38.87534 <br>lon: -77.04644 <br>alt: 1300 </div>';
+var point295 = new google.maps.LatLng(38.87534 ,-77.04644 );
+var marker295 = new google.maps.Marker({
+position: point295 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker295 , "click", function() {
+infowindow.setContent(info295 );
+infowindow.open(map,marker295 );
+});
+var info296 = '<div style="width:150px;">dt: 31MAR2010:21:31:35 <br>aircraft type: B734 <br>lat: 38.87763 <br>lon: -77.04958 <br>alt: 1500 </div>';
+var point296 = new google.maps.LatLng(38.87763 ,-77.04958 );
+var marker296 = new google.maps.Marker({
+position: point296 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker296 , "click", function() {
+infowindow.setContent(info296 );
+infowindow.open(map,marker296 );
+});
+var info297 = '<div style="width:150px;">dt: 31MAR2010:21:31:39 <br>aircraft type: B734 <br>lat: 38.87968 <br>lon: -77.05309 <br>alt: 1800 </div>';
+var point297 = new google.maps.LatLng(38.87968 ,-77.05309 );
+var marker297 = new google.maps.Marker({
+position: point297 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker297 , "click", function() {
+infowindow.setContent(info297 );
+infowindow.open(map,marker297 );
+});
+var info298 = '<div style="width:150px;">dt: 31MAR2010:21:31:44 <br>aircraft type: B734 <br>lat: 38.88224 <br>lon: -77.05671 <br>alt: 2000 </div>';
+var point298 = new google.maps.LatLng(38.88224 ,-77.05671 );
+var marker298 = new google.maps.Marker({
+position: point298 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker298 , "click", function() {
+infowindow.setContent(info298 );
+infowindow.open(map,marker298 );
+});
+var info299 = '<div style="width:150px;">dt: 31MAR2010:21:31:48 <br>aircraft type: B734 <br>lat: 38.88459 <br>lon: -77.0605 <br>alt: 2100 </div>';
+var point299 = new google.maps.LatLng(38.88459 ,-77.0605 );
+var marker299 = new google.maps.Marker({
+position: point299 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker299 , "click", function() {
+infowindow.setContent(info299 );
+infowindow.open(map,marker299 );
+});
+var info300 = '<div style="width:150px;">dt: 31MAR2010:21:31:53 <br>aircraft type: B734 <br>lat: 38.88707 <br>lon: -77.06455 <br>alt: 2200 </div>';
+var point300 = new google.maps.LatLng(38.88707 ,-77.06455 );
+var marker300 = new google.maps.Marker({
+position: point300 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker300 , "click", function() {
+infowindow.setContent(info300 );
+infowindow.open(map,marker300 );
+});
+var info301 = '<div style="width:150px;">dt: 31MAR2010:21:31:58 <br>aircraft type: B734 <br>lat: 38.88976 <br>lon: -77.06842 <br>alt: 2300 </div>';
+var point301 = new google.maps.LatLng(38.88976 ,-77.06842 );
+var marker301 = new google.maps.Marker({
+position: point301 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker301 , "click", function() {
+infowindow.setContent(info301 );
+infowindow.open(map,marker301 );
+});
+var info302 = '<div style="width:150px;">dt: 31MAR2010:21:32:02 <br>aircraft type: B734 <br>lat: 38.89239 <br>lon: -77.07271 <br>alt: 2500 </div>';
+var point302 = new google.maps.LatLng(38.89239 ,-77.07271 );
+var marker302 = new google.maps.Marker({
+position: point302 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker302 , "click", function() {
+infowindow.setContent(info302 );
+infowindow.open(map,marker302 );
+});
+var info303 = '<div style="width:150px;">dt: 31MAR2010:21:32:07 <br>aircraft type: B734 <br>lat: 38.8954 <br>lon: -77.07666 <br>alt: 2700 </div>';
+var point303 = new google.maps.LatLng(38.8954 ,-77.07666 );
+var marker303 = new google.maps.Marker({
+position: point303 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker303 , "click", function() {
+infowindow.setContent(info303 );
+infowindow.open(map,marker303 );
+});
+var info304 = '<div style="width:150px;">dt: 31MAR2010:21:32:11 <br>aircraft type: B734 <br>lat: 38.89828 <br>lon: -77.08036 <br>alt: 3000 </div>';
+var point304 = new google.maps.LatLng(38.89828 ,-77.08036 );
+var marker304 = new google.maps.Marker({
+position: point304 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker304 , "click", function() {
+infowindow.setContent(info304 );
+infowindow.open(map,marker304 );
+});
+var info305 = '<div style="width:150px;">dt: 31MAR2010:21:32:16 <br>aircraft type: B734 <br>lat: 38.90178 <br>lon: -77.08441 <br>alt: 3200 </div>';
+var point305 = new google.maps.LatLng(38.90178 ,-77.08441 );
+var marker305 = new google.maps.Marker({
+position: point305 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker305 , "click", function() {
+infowindow.setContent(info305 );
+infowindow.open(map,marker305 );
+});
+var info306 = '<div style="width:150px;">dt: 31MAR2010:21:32:21 <br>aircraft type: B734 <br>lat: 38.90507 <br>lon: -77.08756 <br>alt: 3500 </div>';
+var point306 = new google.maps.LatLng(38.90507 ,-77.08756 );
+var marker306 = new google.maps.Marker({
+position: point306 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker306 , "click", function() {
+infowindow.setContent(info306 );
+infowindow.open(map,marker306 );
+});
+var info307 = '<div style="width:150px;">dt: 31MAR2010:21:32:25 <br>aircraft type: B734 <br>lat: 38.90828 <br>lon: -77.09133 <br>alt: 3700 </div>';
+var point307 = new google.maps.LatLng(38.90828 ,-77.09133 );
+var marker307 = new google.maps.Marker({
+position: point307 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker307 , "click", function() {
+infowindow.setContent(info307 );
+infowindow.open(map,marker307 );
+});
+var info308 = '<div style="width:150px;">dt: 31MAR2010:21:32:30 <br>aircraft type: B734 <br>lat: 38.91184 <br>lon: -77.09497 <br>alt: 3900 </div>';
+var point308 = new google.maps.LatLng(38.91184 ,-77.09497 );
+var marker308 = new google.maps.Marker({
+position: point308 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker308 , "click", function() {
+infowindow.setContent(info308 );
+infowindow.open(map,marker308 );
+});
+var info309 = '<div style="width:150px;">dt: 31MAR2010:21:32:34 <br>aircraft type: B734 <br>lat: 38.91526 <br>lon: -77.09836 <br>alt: 4200 </div>';
+var point309 = new google.maps.LatLng(38.91526 ,-77.09836 );
+var marker309 = new google.maps.Marker({
+position: point309 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker309 , "click", function() {
+infowindow.setContent(info309 );
+infowindow.open(map,marker309 );
+});
+var info310 = '<div style="width:150px;">dt: 31MAR2010:21:32:39 <br>aircraft type: B734 <br>lat: 38.91879 <br>lon: -77.10221 <br>alt: 4400 </div>';
+var point310 = new google.maps.LatLng(38.91879 ,-77.10221 );
+var marker310 = new google.maps.Marker({
+position: point310 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker310 , "click", function() {
+infowindow.setContent(info310 );
+infowindow.open(map,marker310 );
+});
+var info311 = '<div style="width:150px;">dt: 31MAR2010:21:32:44 <br>aircraft type: B734 <br>lat: 38.92216 <br>lon: -77.10602 <br>alt: 4600 </div>';
+var point311 = new google.maps.LatLng(38.92216 ,-77.10602 );
+var marker311 = new google.maps.Marker({
+position: point311 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker311 , "click", function() {
+infowindow.setContent(info311 );
+infowindow.open(map,marker311 );
+});
+var info312 = '<div style="width:150px;">dt: 31MAR2010:21:32:48 <br>aircraft type: B734 <br>lat: 38.9255 <br>lon: -77.11004 <br>alt: 4800 </div>';
+var point312 = new google.maps.LatLng(38.9255 ,-77.11004 );
+var marker312 = new google.maps.Marker({
+position: point312 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker312 , "click", function() {
+infowindow.setContent(info312 );
+infowindow.open(map,marker312 );
+});
+var info313 = '<div style="width:150px;">dt: 31MAR2010:21:32:53 <br>aircraft type: B734 <br>lat: 38.92936 <br>lon: -77.11396 <br>alt: 5000 </div>';
+var point313 = new google.maps.LatLng(38.92936 ,-77.11396 );
+var marker313 = new google.maps.Marker({
+position: point313 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker313 , "click", function() {
+infowindow.setContent(info313 );
+infowindow.open(map,marker313 );
+});
+var info314 = '<div style="width:150px;">dt: 31MAR2010:21:32:58 <br>aircraft type: B734 <br>lat: 38.93286 <br>lon: -77.11803 <br>alt: 5100 </div>';
+var point314 = new google.maps.LatLng(38.93286 ,-77.11803 );
+var marker314 = new google.maps.Marker({
+position: point314 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker314 , "click", function() {
+infowindow.setContent(info314 );
+infowindow.open(map,marker314 );
+});
+var info315 = '<div style="width:150px;">dt: 31MAR2010:21:33:02 <br>aircraft type: B734 <br>lat: 38.9365 <br>lon: -77.12233 <br>alt: 5200 </div>';
+var point315 = new google.maps.LatLng(38.9365 ,-77.12233 );
+var marker315 = new google.maps.Marker({
+position: point315 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker315 , "click", function() {
+infowindow.setContent(info315 );
+infowindow.open(map,marker315 );
+});
+var info316 = '<div style="width:150px;">dt: 31MAR2010:21:33:07 <br>aircraft type: B734 <br>lat: 38.94027 <br>lon: -77.1269 <br>alt: 5300 </div>';
+var point316 = new google.maps.LatLng(38.94027 ,-77.1269 );
+var marker316 = new google.maps.Marker({
+position: point316 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker316 , "click", function() {
+infowindow.setContent(info316 );
+infowindow.open(map,marker316 );
+});
+var info317 = '<div style="width:150px;">dt: 31MAR2010:21:33:11 <br>aircraft type: B734 <br>lat: 38.94421 <br>lon: -77.1315 <br>alt: 5500 </div>';
+var point317 = new google.maps.LatLng(38.94421 ,-77.1315 );
+var marker317 = new google.maps.Marker({
+position: point317 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker317 , "click", function() {
+infowindow.setContent(info317 );
+infowindow.open(map,marker317 );
+});
+var info318 = '<div style="width:150px;">dt: 31MAR2010:21:33:16 <br>aircraft type: B734 <br>lat: 38.94807 <br>lon: -77.13652 <br>alt: 5700 </div>';
+var point318 = new google.maps.LatLng(38.94807 ,-77.13652 );
+var marker318 = new google.maps.Marker({
+position: point318 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker318 , "click", function() {
+infowindow.setContent(info318 );
+infowindow.open(map,marker318 );
+});
+var info319 = '<div style="width:150px;">dt: 31MAR2010:21:33:21 <br>aircraft type: B734 <br>lat: 38.95205 <br>lon: -77.14091 <br>alt: 5900 </div>';
+var point319 = new google.maps.LatLng(38.95205 ,-77.14091 );
+var marker319 = new google.maps.Marker({
+position: point319 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker319 , "click", function() {
+infowindow.setContent(info319 );
+infowindow.open(map,marker319 );
+});
+var info320 = '<div style="width:150px;">dt: 31MAR2010:21:33:25 <br>aircraft type: B734 <br>lat: 38.95595 <br>lon: -77.14572 <br>alt: 6200 </div>';
+var point320 = new google.maps.LatLng(38.95595 ,-77.14572 );
+var marker320 = new google.maps.Marker({
+position: point320 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker320 , "click", function() {
+infowindow.setContent(info320 );
+infowindow.open(map,marker320 );
+});
+var info321 = '<div style="width:150px;">dt: 31MAR2010:21:33:30 <br>aircraft type: B734 <br>lat: 38.95982 <br>lon: -77.15074 <br>alt: 6500 </div>';
+var point321 = new google.maps.LatLng(38.95982 ,-77.15074 );
+var marker321 = new google.maps.Marker({
+position: point321 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker321 , "click", function() {
+infowindow.setContent(info321 );
+infowindow.open(map,marker321 );
+});
+var info322 = '<div style="width:150px;">dt: 31MAR2010:21:33:34 <br>aircraft type: B734 <br>lat: 38.96367 <br>lon: -77.15597 <br>alt: 6700 </div>';
+var point322 = new google.maps.LatLng(38.96367 ,-77.15597 );
+var marker322 = new google.maps.Marker({
+position: point322 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker322 , "click", function() {
+infowindow.setContent(info322 );
+infowindow.open(map,marker322 );
+});
+var info323 = '<div style="width:150px;">dt: 31MAR2010:21:33:39 <br>aircraft type: B734 <br>lat: 38.96777 <br>lon: -77.16061 <br>alt: 7000 </div>';
+var point323 = new google.maps.LatLng(38.96777 ,-77.16061 );
+var marker323 = new google.maps.Marker({
+position: point323 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker323 , "click", function() {
+infowindow.setContent(info323 );
+infowindow.open(map,marker323 );
+});
+var info324 = '<div style="width:150px;">dt: 31MAR2010:21:33:44 <br>aircraft type: B734 <br>lat: 38.97188 <br>lon: -77.16525 <br>alt: 7200 </div>';
+var point324 = new google.maps.LatLng(38.97188 ,-77.16525 );
+var marker324 = new google.maps.Marker({
+position: point324 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker324 , "click", function() {
+infowindow.setContent(info324 );
+infowindow.open(map,marker324 );
+});
+var info325 = '<div style="width:150px;">dt: 31MAR2010:21:33:48 <br>aircraft type: B734 <br>lat: 38.97572 <br>lon: -77.17048 <br>alt: 7400 </div>';
+var point325 = new google.maps.LatLng(38.97572 ,-77.17048 );
+var marker325 = new google.maps.Marker({
+position: point325 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker325 , "click", function() {
+infowindow.setContent(info325 );
+infowindow.open(map,marker325 );
+});
+var info326 = '<div style="width:150px;">dt: 31MAR2010:21:33:53 <br>aircraft type: B734 <br>lat: 38.97966 <br>lon: -77.17507 <br>alt: 7700 </div>';
+var point326 = new google.maps.LatLng(38.97966 ,-77.17507 );
+var marker326 = new google.maps.Marker({
+position: point326 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker326 , "click", function() {
+infowindow.setContent(info326 );
+infowindow.open(map,marker326 );
+});
+var info327 = '<div style="width:150px;">dt: 31MAR2010:21:33:57 <br>aircraft type: B734 <br>lat: 38.98425 <br>lon: -77.17984 <br>alt: 7900 </div>';
+var point327 = new google.maps.LatLng(38.98425 ,-77.17984 );
+var marker327 = new google.maps.Marker({
+position: point327 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker327 , "click", function() {
+infowindow.setContent(info327 );
+infowindow.open(map,marker327 );
+});
+var info328 = '<div style="width:150px;">dt: 31MAR2010:21:34:02 <br>aircraft type: B734 <br>lat: 38.98904 <br>lon: -77.18311 <br>alt: 8200 </div>';
+var point328 = new google.maps.LatLng(38.98904 ,-77.18311 );
+var marker328 = new google.maps.Marker({
+position: point328 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker328 , "click", function() {
+infowindow.setContent(info328 );
+infowindow.open(map,marker328 );
+});
+var info329 = '<div style="width:150px;">dt: 31MAR2010:21:34:07 <br>aircraft type: B734 <br>lat: 38.99431 <br>lon: -77.18541 <br>alt: 8400 </div>';
+var point329 = new google.maps.LatLng(38.99431 ,-77.18541 );
+var marker329 = new google.maps.Marker({
+position: point329 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker329 , "click", function() {
+infowindow.setContent(info329 );
+infowindow.open(map,marker329 );
+});
+var info330 = '<div style="width:150px;">dt: 31MAR2010:21:34:11 <br>aircraft type: B734 <br>lat: 38.99977 <br>lon: -77.18752 <br>alt: 8700 </div>';
+var point330 = new google.maps.LatLng(38.99977 ,-77.18752 );
+var marker330 = new google.maps.Marker({
+position: point330 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker330 , "click", function() {
+infowindow.setContent(info330 );
+infowindow.open(map,marker330 );
+});
+var info331 = '<div style="width:150px;">dt: 31MAR2010:21:34:16 <br>aircraft type: B734 <br>lat: 39.00513 <br>lon: -77.18789 <br>alt: 8900 </div>';
+var point331 = new google.maps.LatLng(39.00513 ,-77.18789 );
+var marker331 = new google.maps.Marker({
+position: point331 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker331 , "click", function() {
+infowindow.setContent(info331 );
+infowindow.open(map,marker331 );
+});
+var info332 = '<div style="width:150px;">dt: 31MAR2010:21:34:21 <br>aircraft type: B734 <br>lat: 39.01101 <br>lon: -77.18706 <br>alt: 9200 </div>';
+var point332 = new google.maps.LatLng(39.01101 ,-77.18706 );
+var marker332 = new google.maps.Marker({
+position: point332 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker332 , "click", function() {
+infowindow.setContent(info332 );
+infowindow.open(map,marker332 );
+});
+var info333 = '<div style="width:150px;">dt: 31MAR2010:21:34:25 <br>aircraft type: B734 <br>lat: 39.0165 <br>lon: -77.18527 <br>alt: 9500 </div>';
+var point333 = new google.maps.LatLng(39.0165 ,-77.18527 );
+var marker333 = new google.maps.Marker({
+position: point333 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker333 , "click", function() {
+infowindow.setContent(info333 );
+infowindow.open(map,marker333 );
+});
+var info334 = '<div style="width:150px;">dt: 31MAR2010:21:34:30 <br>aircraft type: B734 <br>lat: 39.02196 <br>lon: -77.18259 <br>alt: 9700 </div>';
+var point334 = new google.maps.LatLng(39.02196 ,-77.18259 );
+var marker334 = new google.maps.Marker({
+position: point334 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker334 , "click", function() {
+infowindow.setContent(info334 );
+infowindow.open(map,marker334 );
+});
+var info335 = '<div style="width:150px;">dt: 31MAR2010:21:34:34 <br>aircraft type: B734 <br>lat: 39.02697 <br>lon: -77.17937 <br>alt: 10000 </div>';
+var point335 = new google.maps.LatLng(39.02697 ,-77.17937 );
+var marker335 = new google.maps.Marker({
+position: point335 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker335 , "click", function() {
+infowindow.setContent(info335 );
+infowindow.open(map,marker335 );
+});
+var info336 = '<div style="width:150px;">dt: 31MAR2010:21:34:39 <br>aircraft type: B734 <br>lat: 39.03203 <br>lon: -77.17466 <br>alt: 10200 </div>';
+var point336 = new google.maps.LatLng(39.03203 ,-77.17466 );
+var marker336 = new google.maps.Marker({
+position: point336 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker336 , "click", function() {
+infowindow.setContent(info336 );
+infowindow.open(map,marker336 );
+});
+var info337 = '<div style="width:150px;">dt: 31MAR2010:21:34:44 <br>aircraft type: B734 <br>lat: 39.03645 <br>lon: -77.16956 <br>alt: 10400 </div>';
+var point337 = new google.maps.LatLng(39.03645 ,-77.16956 );
+var marker337 = new google.maps.Marker({
+position: point337 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker337 , "click", function() {
+infowindow.setContent(info337 );
+infowindow.open(map,marker337 );
+});
+var info338 = '<div style="width:150px;">dt: 31MAR2010:21:34:48 <br>aircraft type: B734 <br>lat: 39.04018 <br>lon: -77.16345 <br>alt: 10600 </div>';
+var point338 = new google.maps.LatLng(39.04018 ,-77.16345 );
+var marker338 = new google.maps.Marker({
+position: point338 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker338 , "click", function() {
+infowindow.setContent(info338 );
+infowindow.open(map,marker338 );
+});
+var info339 = '<div style="width:150px;">dt: 31MAR2010:21:34:53 <br>aircraft type: B734 <br>lat: 39.04332 <br>lon: -77.15654 <br>alt: 10600 </div>';
+var point339 = new google.maps.LatLng(39.04332 ,-77.15654 );
+var marker339 = new google.maps.Marker({
+position: point339 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker339 , "click", function() {
+infowindow.setContent(info339 );
+infowindow.open(map,marker339 );
+});
+var info340 = '<div style="width:150px;">dt: 31MAR2010:21:34:58 <br>aircraft type: B734 <br>lat: 39.04565 <br>lon: -77.14834 <br>alt: 10700 </div>';
+var point340 = new google.maps.LatLng(39.04565 ,-77.14834 );
+var marker340 = new google.maps.Marker({
+position: point340 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker340 , "click", function() {
+infowindow.setContent(info340 );
+infowindow.open(map,marker340 );
+});
+var info341 = '<div style="width:150px;">dt: 31MAR2010:21:35:02 <br>aircraft type: B734 <br>lat: 39.0473 <br>lon: -77.14001 <br>alt: 10900 </div>';
+var point341 = new google.maps.LatLng(39.0473 ,-77.14001 );
+var marker341 = new google.maps.Marker({
+position: point341 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker341 , "click", function() {
+infowindow.setContent(info341 );
+infowindow.open(map,marker341 );
+});
+var info342 = '<div style="width:150px;">dt: 31MAR2010:21:35:07 <br>aircraft type: B734 <br>lat: 39.04866 <br>lon: -77.13139 <br>alt: 11000 </div>';
+var point342 = new google.maps.LatLng(39.04866 ,-77.13139 );
+var marker342 = new google.maps.Marker({
+position: point342 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker342 , "click", function() {
+infowindow.setContent(info342 );
+infowindow.open(map,marker342 );
+});
+var info343 = '<div style="width:150px;">dt: 31MAR2010:21:35:11 <br>aircraft type: B734 <br>lat: 39.04975 <br>lon: -77.12226 <br>alt: 11100 </div>';
+var point343 = new google.maps.LatLng(39.04975 ,-77.12226 );
+var marker343 = new google.maps.Marker({
+position: point343 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker343 , "click", function() {
+infowindow.setContent(info343 );
+infowindow.open(map,marker343 );
+});
+var info344 = '<div style="width:150px;">dt: 31MAR2010:21:35:16 <br>aircraft type: B734 <br>lat: 39.05064 <br>lon: -77.11331 <br>alt: 11200 </div>';
+var point344 = new google.maps.LatLng(39.05064 ,-77.11331 );
+var marker344 = new google.maps.Marker({
+position: point344 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker344 , "click", function() {
+infowindow.setContent(info344 );
+infowindow.open(map,marker344 );
+});
+var info345 = '<div style="width:150px;">dt: 31MAR2010:21:35:21 <br>aircraft type: B734 <br>lat: 39.05158 <br>lon: -77.10393 <br>alt: 11300 </div>';
+var point345 = new google.maps.LatLng(39.05158 ,-77.10393 );
+var marker345 = new google.maps.Marker({
+position: point345 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker345 , "click", function() {
+infowindow.setContent(info345 );
+infowindow.open(map,marker345 );
+});
+var info346 = '<div style="width:150px;">dt: 31MAR2010:21:35:25 <br>aircraft type: B734 <br>lat: 39.05283 <br>lon: -77.09376 <br>alt: 11300 </div>';
+var point346 = new google.maps.LatLng(39.05283 ,-77.09376 );
+var marker346 = new google.maps.Marker({
+position: point346 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker346 , "click", function() {
+infowindow.setContent(info346 );
+infowindow.open(map,marker346 );
+});
+var info347 = '<div style="width:150px;">dt: 31MAR2010:21:35:30 <br>aircraft type: B734 <br>lat: 39.05361 <br>lon: -77.08435 <br>alt: 11400 </div>';
+var point347 = new google.maps.LatLng(39.05361 ,-77.08435 );
+var marker347 = new google.maps.Marker({
+position: point347 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker347 , "click", function() {
+infowindow.setContent(info347 );
+infowindow.open(map,marker347 );
+});
+var info348 = '<div style="width:150px;">dt: 31MAR2010:21:35:35 <br>aircraft type: B734 <br>lat: 39.05465 <br>lon: -77.07434 <br>alt: 11500 </div>';
+var point348 = new google.maps.LatLng(39.05465 ,-77.07434 );
+var marker348 = new google.maps.Marker({
+position: point348 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker348 , "click", function() {
+infowindow.setContent(info348 );
+infowindow.open(map,marker348 );
+});
+var info349 = '<div style="width:150px;">dt: 31MAR2010:21:35:39 <br>aircraft type: B734 <br>lat: 39.05568 <br>lon: -77.06433 <br>alt: 11700 </div>';
+var point349 = new google.maps.LatLng(39.05568 ,-77.06433 );
+var marker349 = new google.maps.Marker({
+position: point349 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker349 , "click", function() {
+infowindow.setContent(info349 );
+infowindow.open(map,marker349 );
+});
+var info350 = '<div style="width:150px;">dt: 31MAR2010:21:35:44 <br>aircraft type: B734 <br>lat: 39.05648 <br>lon: -77.05471 <br>alt: 11900 </div>';
+var point350 = new google.maps.LatLng(39.05648 ,-77.05471 );
+var marker350 = new google.maps.Marker({
+position: point350 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker350 , "click", function() {
+infowindow.setContent(info350 );
+infowindow.open(map,marker350 );
+});
+var info351 = '<div style="width:150px;">dt: 31MAR2010:21:35:49 <br>aircraft type: B734 <br>lat: 39.05726 <br>lon: -77.0442 <br>alt: 12100 </div>';
+var point351 = new google.maps.LatLng(39.05726 ,-77.0442 );
+var marker351 = new google.maps.Marker({
+position: point351 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker351 , "click", function() {
+infowindow.setContent(info351 );
+infowindow.open(map,marker351 );
+});
+var info352 = '<div style="width:150px;">dt: 31MAR2010:21:35:53 <br>aircraft type: B734 <br>lat: 39.05868 <br>lon: -77.03385 <br>alt: 12400 </div>';
+var point352 = new google.maps.LatLng(39.05868 ,-77.03385 );
+var marker352 = new google.maps.Marker({
+position: point352 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker352 , "click", function() {
+infowindow.setContent(info352 );
+infowindow.open(map,marker352 );
+});
+var info353 = '<div style="width:150px;">dt: 31MAR2010:21:35:58 <br>aircraft type: B734 <br>lat: 39.05951 <br>lon: -77.02401 <br>alt: 12700 </div>';
+var point353 = new google.maps.LatLng(39.05951 ,-77.02401 );
+var marker353 = new google.maps.Marker({
+position: point353 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker353 , "click", function() {
+infowindow.setContent(info353 );
+infowindow.open(map,marker353 );
+});
+var info354 = '<div style="width:150px;">dt: 31MAR2010:21:36:03 <br>aircraft type: B734 <br>lat: 39.06089 <br>lon: -77.01385 <br>alt: 13000 </div>';
+var point354 = new google.maps.LatLng(39.06089 ,-77.01385 );
+var marker354 = new google.maps.Marker({
+position: point354 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker354 , "click", function() {
+infowindow.setContent(info354 );
+infowindow.open(map,marker354 );
+});
+var info355 = '<div style="width:150px;">dt: 31MAR2010:21:36:07 <br>aircraft type: B734 <br>lat: 39.06223 <br>lon: -77.00414 <br>alt: 13200 </div>';
+var point355 = new google.maps.LatLng(39.06223 ,-77.00414 );
+var marker355 = new google.maps.Marker({
+position: point355 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker355 , "click", function() {
+infowindow.setContent(info355 );
+infowindow.open(map,marker355 );
+});
+var info356 = '<div style="width:150px;">dt: 31MAR2010:21:36:12 <br>aircraft type: B734 <br>lat: 39.06329 <br>lon: -76.99392 <br>alt: 13500 </div>';
+var point356 = new google.maps.LatLng(39.06329 ,-76.99392 );
+var marker356 = new google.maps.Marker({
+position: point356 ,
+icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png" ,
+map: map,
+title: "Click here for details"
+});
+google.maps.event.addListener(marker356 , "click", function() {
+infowindow.setContent(info356 );
+infowindow.open(map,marker356 );
+});
+}google.maps.event.addDomListener(window, "load", initialize);
+</script>
+</head><body>
+<h3>Noise grid + test flight track</h3>
+<div id="map-canvas" style="width:550px; height:350px; border: 2px solid #3872ac;"></div>
+</body></html>
